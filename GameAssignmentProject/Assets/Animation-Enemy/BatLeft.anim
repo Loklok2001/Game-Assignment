@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: KnightCrouchRight
+  m_Name: BatLeft
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -6845645109788476181, guid: 852ed71025819974eaee06b652ba82bb, type: 3}
+      value: {fileID: 4252863098526301527, guid: 2acd9f8e647203844a49b816561ab614, type: 3}
     - time: 0.083333336
-      value: {fileID: 1687172972817953423, guid: 1e2b8ab0301648249b5d33d7166dbbbd, type: 3}
+      value: {fileID: 7055505884542976650, guid: 2acd9f8e647203844a49b816561ab614, type: 3}
+    - time: 0.16666667
+      value: {fileID: 1540268859063289222, guid: 2acd9f8e647203844a49b816561ab614, type: 3}
+    - time: 0.25
+      value: {fileID: -1028703682837738460, guid: 2acd9f8e647203844a49b816561ab614, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -42,14 +46,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -6845645109788476181, guid: 852ed71025819974eaee06b652ba82bb, type: 3}
-    - {fileID: 1687172972817953423, guid: 1e2b8ab0301648249b5d33d7166dbbbd, type: 3}
+    - {fileID: 4252863098526301527, guid: 2acd9f8e647203844a49b816561ab614, type: 3}
+    - {fileID: 7055505884542976650, guid: 2acd9f8e647203844a49b816561ab614, type: 3}
+    - {fileID: 1540268859063289222, guid: 2acd9f8e647203844a49b816561ab614, type: 3}
+    - {fileID: -1028703682837738460, guid: 2acd9f8e647203844a49b816561ab614, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.16666667
+    m_StopTime: 0.33333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
