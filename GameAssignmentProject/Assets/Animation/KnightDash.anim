@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: KnightCrouchLeft
+  m_Name: KnightDash
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -7294271053213599747, guid: 2e96e2e3a31eba54bbf1ecd97d44a94a, type: 3}
+      value: {fileID: 3891001469482682451, guid: d01f5abdf66dfaa4f8969d2db66c9e72, type: 3}
     - time: 0.083333336
-      value: {fileID: -5980857921423244730, guid: 79b339dd3799c09469e71bf2fccbf81a, type: 3}
+      value: {fileID: 6490054652616225775, guid: 44301e48dd6a11e4d985f5846d6c89a0, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -42,8 +42,8 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -7294271053213599747, guid: 2e96e2e3a31eba54bbf1ecd97d44a94a, type: 3}
-    - {fileID: -5980857921423244730, guid: 79b339dd3799c09469e71bf2fccbf81a, type: 3}
+    - {fileID: 3891001469482682451, guid: d01f5abdf66dfaa4f8969d2db66c9e72, type: 3}
+    - {fileID: 6490054652616225775, guid: 44301e48dd6a11e4d985f5846d6c89a0, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

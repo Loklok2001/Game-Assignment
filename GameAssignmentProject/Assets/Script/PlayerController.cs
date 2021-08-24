@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     bool isGround;
     bool isCrouch;
     bool isDashing;
+    bool isJumping;
 
 
     // Start is called before the first frame update
@@ -38,14 +39,15 @@ public class PlayerController : MonoBehaviour
         //Jump
         if (Input.GetButtonDown("Jump"))
             Jump();
+
         checkGrounded();
 
         //Dash Left
-        if (Input.GetButtonDown("Dash") && Input.GetKey(KeyCode.A)) 
+        if (Input.GetButtonDown("Dash") && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))) 
         {
             StartCoroutine(Dash(-1f));
         }
-        if (Input.GetButtonDown("Dash") && Input.GetKey(KeyCode.D))
+        if (Input.GetButtonDown("Dash") && Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             StartCoroutine(Dash(1f));
         }
@@ -79,6 +81,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("Crouch", isCrouch);
         animator.SetBool("Dash", isDashing);
 
+
         if (isCrouch)
             rb.velocity = new Vector2(horizontalInput * crouchSpeed, rb.velocity.y);
         else if (!isDashing)
@@ -90,7 +93,6 @@ public class PlayerController : MonoBehaviour
         if (isGround || jumpCount < extraJumps)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            animator.SetTrigger("Jump");
             jumpCount++;
         }
     }
@@ -105,11 +107,8 @@ public class PlayerController : MonoBehaviour
         isDashing = true;
         rb.velocity = new Vector2(rb.velocity.x, 0f);
         rb.AddForce(new Vector2(dashDistance * direction, 0), ForceMode2D.Impulse);
-        float gravity = rb.gravityScale;
-        rb.gravityScale = 0;
-        yield return new WaitForSeconds(0f);
+        yield return new WaitForSeconds(0.4f);
         isDashing = false;
-        rb.gravityScale = gravity;
     }
 
     private void checkGrounded()
