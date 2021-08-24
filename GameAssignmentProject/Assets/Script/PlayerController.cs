@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 1;
-    public float JumpForce = 1.5f;
+    public float jumpForce = 5;
     public Animator animator;
     private Rigidbody2D rb;
 
@@ -24,10 +24,10 @@ public class PlayerController : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        rb.velocity = new Vector2(horizontalInput * moveSpeed,0);
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f)
-        {
-            rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
-        }
+        rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
+
+        if (Input.GetKey(KeyCode.W))
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
     }
 }
