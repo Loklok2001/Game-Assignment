@@ -142,10 +142,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 32208488}
   attackPoint: {fileID: 1023013127}
-  attackRange: 0.6
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  attackDamage: 40
+  attackRange: 0.6
+  attackrate: 2
 --- !u!95 &32208488 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2320415185002843741, guid: 78c3e0bde434fa94a91c2303e5ebfaf4, type: 3}
@@ -468,6 +470,30 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1583411632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7325137029567290635, guid: 6a7b340355de4774fba7d50c659af86c, type: 3}
+  m_PrefabInstance: {fileID: 7325137028476893760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1583411634 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7325137029567290636, guid: 6a7b340355de4774fba7d50c659af86c, type: 3}
+  m_PrefabInstance: {fileID: 7325137028476893760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1583411637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583411632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df8dc54ecfa76a4a8974b9861af392a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1583411634}
+  maxHealth: 100
 --- !u!1 &1617366391
 GameObject:
   m_ObjectHideFlags: 0
