@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     bool isGround;
     bool isCrouch;
     bool isDashing;
-    bool isJumping;
+
 
 
     // Start is called before the first frame update
