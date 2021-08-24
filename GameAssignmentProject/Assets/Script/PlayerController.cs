@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 1;
+    public float JumpForce = 1.5f;
     public Animator animator;
     private Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +25,9 @@ public class PlayerController : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         rb.velocity = new Vector2(horizontalInput * moveSpeed,0);
+        if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f)
+        {
+            rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+        }
     }
 }

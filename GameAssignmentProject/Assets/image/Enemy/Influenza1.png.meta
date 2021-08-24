@@ -1,7 +1,112 @@
 fileFormatVersion: 2
-guid: d6bcde253d959ac448acfc13a0ee71b0
+guid: 1bf2b8b2e6951ca439de1879b2260080
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6268572991995628165
+    second: Influenza1_0
+  - first:
+      213: -6783205926619227477
+    second: Influenza1_1
+  - first:
+      213: 9167999668877355404
+    second: Influenza1_2
+  - first:
+      213: 6290914487391375399
+    second: Influenza1_3
+  - first:
+      213: 1016586844048265390
+    second: Influenza1_4
+  - first:
+      213: -6661667813657964438
+    second: Influenza1_5
+  - first:
+      213: 4817472870810140416
+    second: Influenza1_6
+  - first:
+      213: 8808767549866635252
+    second: Influenza1_7
+  - first:
+      213: -2340040441239798447
+    second: Influenza1_8
+  - first:
+      213: 8349580340109478528
+    second: Influenza1_9
+  - first:
+      213: -2092240620445116167
+    second: Influenza1_10
+  - first:
+      213: 6589474596734378822
+    second: Influenza1_11
+  - first:
+      213: -2670538225240407519
+    second: Influenza1_12
+  - first:
+      213: -5566467150983096305
+    second: Influenza1_13
+  - first:
+      213: -1917544272927693916
+    second: Influenza1_14
+  - first:
+      213: 218622825479482006
+    second: Influenza1_15
+  - first:
+      213: -8902515847421250295
+    second: Influenza1_16
+  - first:
+      213: 8084088290590097377
+    second: Influenza1_17
+  - first:
+      213: -3582503068809447331
+    second: Influenza1_18
+  - first:
+      213: -1837945698073333767
+    second: Influenza1_19
+  - first:
+      213: 6579699986905058929
+    second: Influenza1_20
+  - first:
+      213: -2137708524667642503
+    second: Influenza1_21
+  - first:
+      213: -9182607020312280614
+    second: Influenza1_22
+  - first:
+      213: 2870689536033332941
+    second: Influenza1_23
+  - first:
+      213: -3268913504172857237
+    second: Influenza1_24
+  - first:
+      213: -6480940682351821450
+    second: Influenza1_25
+  - first:
+      213: -6582611769932785504
+    second: Influenza1_26
+  - first:
+      213: 1828137902592440417
+    second: Influenza1_27
+  - first:
+      213: 3556883765740666337
+    second: Influenza1_28
+  - first:
+      213: 7983291341360176842
+    second: Influenza1_29
+  - first:
+      213: 6253486774651193392
+    second: Influenza1_31
+  - first:
+      213: -1521970838376360946
+    second: Influenza1_32
+  - first:
+      213: 6686045392521205637
+    second: Influenza1_33
+  - first:
+      213: -9039814728311299445
+    second: Influenza1_34
+  - first:
+      213: -9086076723548901359
+    second: Influenza1_35
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,736 +208,736 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Influenza_0
+      name: Influenza1_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 408
+        x: 67
+        y: 407
         width: 41
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c08d4261dc896aaf0800000000000000
-      internalID: -385452711486367732
+      spriteID: b753e7b731e8109a0800000000000000
+      internalID: -6268572991995628165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_1
+      name: Influenza1_1
       rect:
         serializedVersion: 2
-        x: 136
+        x: 173
         y: 408
-        width: 41
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8645fff1bfe178400800000000000000
-      internalID: 326263561930101864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_2
-      rect:
-        serializedVersion: 2
-        x: 249
-        y: 409
         width: 41
         height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 761fec5b21d0c1e90800000000000000
-      internalID: -7053748542358228633
+      spriteID: baa598116263dd1a0800000000000000
+      internalID: -6783205926619227477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_3
+      name: Influenza1_2
       rect:
         serializedVersion: 2
-        x: 354
-        y: 409
+        x: 278
+        y: 408
         width: 41
         height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e41dba4199e124980800000000000000
-      internalID: -8556242699224886962
+      spriteID: c89655cef174b3f70800000000000000
+      internalID: 9167999668877355404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_4
+      name: Influenza1_3
       rect:
         serializedVersion: 2
-        x: 460
-        y: 408
+        x: 391
+        y: 407
         width: 41
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e413130f927d0980800000000000000
-      internalID: -8571068488539237143
+      spriteID: 72052554561dd4750800000000000000
+      internalID: 6290914487391375399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_5
+      name: Influenza1_4
       rect:
         serializedVersion: 2
-        x: 25
-        y: 347
+        x: 498
+        y: 407
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea015da3954ab1e00800000000000000
+      internalID: 1016586844048265390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 346
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6093432b600d83a0800000000000000
+      internalID: -6661667813657964438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_6
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 345
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f38bb4d0a1bd240800000000000000
+      internalID: 4817472870810140416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_7
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 345
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffe9ce6a670f3a70800000000000000
+      internalID: 8808767549866635252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_8
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 346
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d7ad3ed91868fd0800000000000000
+      internalID: -2340040441239798447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_9
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 346
         width: 40
         height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dcaf2f7e05112ad0800000000000000
-      internalID: -2728876747202253615
+      spriteID: 08a8fc3d41bafd370800000000000000
+      internalID: 8349580340109478528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_6
+      name: Influenza1_10
       rect:
         serializedVersion: 2
-        x: 136
-        y: 347
-        width: 39
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08f63bbf6462a65f0800000000000000
-      internalID: -762755100573470848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_7
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 346
-        width: 38
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e9d046683271e9a0800000000000000
-      internalID: -6205553224980571676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_8
-      rect:
-        serializedVersion: 2
-        x: 355
-        y: 346
-        width: 38
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc68555476a7c73b0800000000000000
-      internalID: -5513397259844876596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_9
-      rect:
-        serializedVersion: 2
-        x: 459
-        y: 347
-        width: 39
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f1bc00a08de52830800000000000000
-      internalID: 4045900976959042037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_10
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 284
-        width: 51
+        x: 62
+        y: 283
+        width: 52
         height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cff8606ae4b1d150800000000000000
-      internalID: 5895692305937530822
+      spriteID: 9f8d9b9ad3ed6f2e0800000000000000
+      internalID: -2092240620445116167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_11
+      name: Influenza1_11
       rect:
         serializedVersion: 2
-        x: 132
+        x: 161
         y: 285
         width: 53
         height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 299049ec56f33b830800000000000000
-      internalID: 4085678993445226898
+      spriteID: 64320d2bb34827b50800000000000000
+      internalID: 6589474596734378822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_12
+      name: Influenza1_12
       rect:
         serializedVersion: 2
-        x: 246
-        y: 286
+        x: 269
+        y: 285
         width: 53
         height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e092d35bb3f96bc20800000000000000
-      internalID: 3221937662222739726
+      spriteID: 122817d12a750fad0800000000000000
+      internalID: -2670538225240407519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_13
+      name: Influenza1_13
       rect:
         serializedVersion: 2
-        x: 354
-        y: 286
-        width: 53
-        height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d386fcb600ca4890800000000000000
-      internalID: -7472949496495307819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_14
-      rect:
-        serializedVersion: 2
-        x: 454
+        x: 383
         y: 284
-        width: 52
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0895cb5e9fefb2b0800000000000000
+      internalID: -5566467150983096305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_14
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 283
+        width: 51
         height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fee8a2842becf9060800000000000000
-      internalID: 6962510814048325359
+      spriteID: 4a36f03b4a38365e0800000000000000
+      internalID: -1917544272927693916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_15
+      name: Influenza1_15
       rect:
         serializedVersion: 2
-        x: 28
-        y: 210
-        width: 45
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29762d696a0def7a0800000000000000
-      internalID: -6341401811377559662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_16
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 212
-        width: 49
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80d84962affe55a40800000000000000
-      internalID: 5356451189495205128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_17
-      rect:
-        serializedVersion: 2
-        x: 245
-        y: 215
-        width: 56
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6526cd4a78ab22480800000000000000
-      internalID: -8925366419745643946
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_18
-      rect:
-        serializedVersion: 2
-        x: 345
-        y: 216
-        width: 57
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a07662369c7445910800000000000000
-      internalID: 1825162679269353226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_19
-      rect:
-        serializedVersion: 2
-        x: 456
-        y: 212
+        x: 63
+        y: 211
         width: 49
         height: 51
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b53c30f656813e750800000000000000
-      internalID: 6332932324946330459
+      spriteID: 69a2f7c2d44b80300800000000000000
+      internalID: 218622825479482006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_20
+      name: Influenza1_16
       rect:
         serializedVersion: 2
-        x: 28
-        y: 148
-        width: 36
-        height: 47
+        x: 166
+        y: 215
+        width: 57
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 140962e5bfca356c0800000000000000
-      internalID: -4155787835516481471
+      spriteID: 905bb2b1109e37480800000000000000
+      internalID: -8902515847421250295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_21
+      name: Influenza1_17
       rect:
         serializedVersion: 2
-        x: 139
-        y: 148
-        width: 46
-        height: 47
+        x: 267
+        y: 214
+        width: 56
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32da8ea1ba80a78f0800000000000000
-      internalID: -542111274160837341
+      spriteID: 1ef748d0873703070800000000000000
+      internalID: 8084088290590097377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_22
+      name: Influenza1_18
       rect:
         serializedVersion: 2
-        x: 253
-        y: 147
-        width: 41
-        height: 48
+        x: 384
+        y: 211
+        width: 49
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 267f37407c1be7480800000000000000
-      internalID: -8899480345306204318
+      spriteID: d58bdd89074684ec0800000000000000
+      internalID: -3582503068809447331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_23
+      name: Influenza1_19
       rect:
         serializedVersion: 2
-        x: 350
-        y: 149
-        width: 37
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35486ba808ebabfa0800000000000000
-      internalID: -5784101312111672237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_24
-      rect:
-        serializedVersion: 2
-        x: 454
-        y: 148
+        x: 495
+        y: 209
         width: 45
         height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c1f98669d1c3e530800000000000000
-      internalID: 3883160443195879875
+      spriteID: 9ffa1ed102e4e76e0800000000000000
+      internalID: -1837945698073333767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_25
+      name: Influenza1_20
       rect:
         serializedVersion: 2
-        x: 33
-        y: 82
-        width: 39
-        height: 48
+        x: 69
+        y: 147
+        width: 45
+        height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9294d792375c26ad0800000000000000
-      internalID: -2710386927315629783
+      spriteID: 17e4e10074acf4b50800000000000000
+      internalID: 6579699986905058929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_26
+      name: Influenza1_21
       rect:
         serializedVersion: 2
-        x: 141
-        y: 81
+        x: 181
+        y: 148
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d5cd14c655552e0800000000000000
+      internalID: -2137708524667642503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_22
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 146
         width: 41
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b70dafea90a3b4f0800000000000000
-      internalID: -814130520317425741
+      spriteID: ad1474a0193d09080800000000000000
+      internalID: -9182607020312280614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_27
+      name: Influenza1_23
       rect:
         serializedVersion: 2
-        x: 260
-        y: 81
-        width: 41
-        height: 46
+        x: 383
+        y: 147
+        width: 46
+        height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da5dc3fd78e136c70800000000000000
-      internalID: 8963041252312143277
+      spriteID: dce92b76cecb6d720800000000000000
+      internalID: 2870689536033332941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_28
+      name: Influenza1_24
       rect:
         serializedVersion: 2
-        x: 359
-        y: 81
-        width: 43
-        height: 46
+        x: 504
+        y: 147
+        width: 36
+        height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c560d022c2121f280800000000000000
-      internalID: -9011384905958095268
+      spriteID: b68ac46cc7c72a2d0800000000000000
+      internalID: -3268913504172857237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_29
+      name: Influenza1_25
       rect:
         serializedVersion: 2
-        x: 458
-        y: 81
+        x: 70
+        y: 80
         width: 40
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e79214794a136f70800000000000000
-      internalID: 9179209368293513192
+      spriteID: 67dba0279c21f06a0800000000000000
+      internalID: -6480940682351821450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Influenza_30
+      name: Influenza1_26
       rect:
         serializedVersion: 2
-        x: 33
+        x: 166
+        y: 80
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8d9dea87dd5a4a0800000000000000
+      internalID: -6582611769932785504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_27
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 80
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168337c8cb9de5910800000000000000
+      internalID: 1828137902592440417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_28
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 80
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed735490f69c5130800000000000000
+      internalID: 3556883765740666337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_29
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 81
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace993c7d295ace60800000000000000
+      internalID: 7983291341360176842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_31
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 13
+        width: 81
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03800b2d619d8c650800000000000000
+      internalID: 6253486774651193392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_32
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 14
+        width: 67
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04d214169fd0eae0800000000000000
+      internalID: -1521970838376360946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_33
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 14
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5871d5d3cda99cc50800000000000000
+      internalID: 6686045392521205637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_34
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 11
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8229ab46602c8280800000000000000
+      internalID: -9039814728311299445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Influenza1_35
+      rect:
+        serializedVersion: 2
+        x: 489
         y: 13
         width: 45
         height: 53
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85797e4d1b6869390800000000000000
-      internalID: -7811908405288265896
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_31
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 12
-        width: 52
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0aba42d4444b3fa70800000000000000
-      internalID: 8859623097412922272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_32
-      rect:
-        serializedVersion: 2
-        x: 248
-        y: 15
-        width: 58
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18c8801a09c11c940800000000000000
-      internalID: 5314560442776456321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_33
-      rect:
-        serializedVersion: 2
-        x: 353
-        y: 15
-        width: 67
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc4a256af272d0430800000000000000
-      internalID: 3750697150276871373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Influenza_34
-      rect:
-        serializedVersion: 2
-        x: 452
-        y: 14
-        width: 74
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca5d74037a8f0d010800000000000000
-      internalID: 1211741696715904428
+      spriteID: 1103cea2c55c7e180800000000000000
+      internalID: -9086076723548901359
       vertices: []
       indices: 
       edges: []
