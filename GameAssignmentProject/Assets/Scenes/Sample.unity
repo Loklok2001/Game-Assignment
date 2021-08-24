@@ -1159,6 +1159,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5580402488025920205, guid: 78c3e0bde434fa94a91c2303e5ebfaf4, type: 3}
+      propertyPath: moveSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5580402488025920205, guid: 78c3e0bde434fa94a91c2303e5ebfaf4, type: 3}
       propertyPath: Layer.m_Bits
       value: 64
       objectReference: {fileID: 0}

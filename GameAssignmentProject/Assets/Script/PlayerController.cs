@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private bool Ground;
-    public bool crouch;
+    bool crouch;
 
     public Animator animator;
     private Rigidbody2D rb;
