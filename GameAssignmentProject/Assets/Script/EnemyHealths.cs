@@ -23,12 +23,11 @@ public class EnemyHealths : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            enemyDie();
+            EnemyDie();
         }
-
     }
 
-    public void enemyDie()
+    public void EnemyDie()
     {
         Debug.Log("Enemy died!");
         animator.SetBool("isDead", true);

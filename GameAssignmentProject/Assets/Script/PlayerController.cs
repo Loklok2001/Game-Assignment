@@ -104,11 +104,15 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Dash (float direction)
     {
+        float gravity = 5;
+
         isDashing = true;
         rb.velocity = new Vector2(rb.velocity.x, 0f);
         rb.AddForce(new Vector2(dashDistance * direction, 0), ForceMode2D.Impulse);
+        rb.gravityScale = 0;
         yield return new WaitForSeconds(0.4f);
         isDashing = false;
+        rb.gravityScale = gravity;
     }
 
     private void checkGrounded()
