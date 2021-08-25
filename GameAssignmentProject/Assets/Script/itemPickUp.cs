@@ -13,7 +13,6 @@ public class itemPickUp : MonoBehaviour
         {
             itemPick.Add(gameObject);
             FindObjectOfType<InventorySystem>().PickUp(gameObject);
-            
         }
     }
 }
