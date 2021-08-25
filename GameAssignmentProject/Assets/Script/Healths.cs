@@ -12,14 +12,11 @@ public class Healths : MonoBehaviour
         health = maxHealth;
     }
 
-    public void UpdateHealth(float mod)
+    public void TakeDamage(float damage)
     {
-        health += mod;
-        if (health > maxHealth)
-        {
-            health = maxHealth;
-        }
-        else if (health <= 0f) {
+        health -= damage;
+
+        if (health <= 0f) {
             health = 0f;
             Debug.Log("Player Die");
         }
