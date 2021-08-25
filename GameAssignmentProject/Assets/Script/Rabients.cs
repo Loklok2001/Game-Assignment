@@ -27,13 +27,13 @@ public class Rabients : MonoBehaviour
             Die();
         }
     }
-    void Die()
+    public void Die()
     {
         Debug.Log("Enemy died!");
         animator.SetBool("isDead", true);
 
         Destroy(gameObject);
-       
+        GetComponent<itemDrop>().DropItems();
     }
 }
 
