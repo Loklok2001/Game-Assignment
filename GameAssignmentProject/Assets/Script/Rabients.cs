@@ -32,8 +32,7 @@ public class Rabients : MonoBehaviour
         Debug.Log("Enemy died!");
         animator.SetBool("isDead", true);
 
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
+        Destroy(gameObject);
        
     }
 }
