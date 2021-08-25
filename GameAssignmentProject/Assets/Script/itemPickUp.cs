@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class itemPickUp : MonoBehaviour
 {
+    public List<GameObject> itemPick;
+    public bool IsitemStore = false;
+
     void OnTriggerEnter2D(Collider2D other)
     {
        if(other.gameObject.CompareTag("Player"))
         {
-            Destroy(this.gameObject);
-            Debug.Log("collect coin");
+            itemPick.Add(gameObject);
+            FindObjectOfType<InventorySystem>().PickUp(gameObject);
+            
         }
     }
 }
