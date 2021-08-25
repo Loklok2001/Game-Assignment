@@ -10,6 +10,9 @@ public class Wolfs : MonoBehaviour
     public int nextID = 0;
     int idChangeValue = 1;
     public float speed = 2;
+    private float attackDamage = 20;
+    private float attackSpeed = 1f;
+    private float canAttack;
 
     private void Reset()
     {
@@ -54,6 +57,22 @@ public class Wolfs : MonoBehaviour
     private void Update()
     {
         MoveToNextPoint();
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            if (attackSpeed <= canAttack)
+            {
+                collision.gameObject.GetComponent<Healths>().UpdateHealth(-attackDamage);
+                canAttack = 0f;
+            }
+            else 
+            {
+                canAttack += Time.deltaTime;
+            }
+        }
     }
 
     void MoveToNextPoint()
