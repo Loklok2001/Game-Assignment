@@ -2,10 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class InventorySystem : MonoBehaviour
 {
-    public List<GameObject> items = new List<GameObject>();
+    item itemsc;
+    public TextMeshProUGUI[] quantity;
+    public class InventoryItem
+    {
+        public GameObject obj;
+        public int stack = 1;
+
+        public InventoryItem(GameObject o, int s = 1)
+        {
+            obj = o;
+            stack = s;
+        }
+    }
+
+
+    public List<InventoryItem> items = new List<InventoryItem>();
 
     bool isOpen = false;
 
@@ -31,9 +47,28 @@ public class InventorySystem : MonoBehaviour
     }
 
 
-    public void PickUp(GameObject item)
+    public void PickUp(GameObject item_list)
     {
-        items.Add(item);
+        if (item_list.GetComponent<item>().IsStackable())
+        {
+            InventoryItem existing = items.Find(x => x.obj.name == item_list.name);
+
+            if(existing!= null)
+            {
+                existing.stack++;
+            }
+            else
+            {
+                InventoryItem i = new InventoryItem(item_list);
+                items.Add(i);
+            }
+        }
+        else
+        {
+            InventoryItem i = new InventoryItem(item_list);
+            items.Add(i);
+        }
+        
         Update_Inventory();
     }
 
@@ -42,9 +77,9 @@ public class InventorySystem : MonoBehaviour
         HideAll();
         for(int i =0; i < items.Count; i++)
         {
-            items_images[i].sprite = items[i].GetComponent<SpriteRenderer>().sprite;
+            items_images[i].sprite = items[i].obj.GetComponent<SpriteRenderer>().sprite;
             items_images[i].gameObject.SetActive(true);
-            
+            quantity[i].text = items[i].stack.ToString();
         }
     }
 

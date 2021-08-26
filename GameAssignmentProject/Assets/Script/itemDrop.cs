@@ -9,6 +9,7 @@ public class itemDrop : MonoBehaviour
 
     public void DropItems()
     {
+        Debug.Log("asdf");
         enemydie = GetComponent<Transform>().transform;
         GameObject item = Instantiate(ItemModel, enemydie.position, Quaternion.identity);
     }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4629820745931257476}
   - component: {fileID: 4629820745931257472}
   - component: {fileID: 4629820745931257503}
+  - component: {fileID: -7850930383220482014}
   m_Layer: 0
   m_Name: paper
   m_TagString: item
@@ -98,7 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28720be57e7be74b9652b81f793019b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsitemStore: 0
 --- !u!60 &4629820745931257476
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -340,3 +340,16 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 9.469999, y: 9.03}
   m_Direction: 1
+--- !u!114 &-7850930383220482014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4629820745931257477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05338a857fb447b45878b49c0976f967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemtype: 1

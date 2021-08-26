@@ -13,7 +13,6 @@ public class item : MonoBehaviour
     }
 
     public ItemType itemtype;
-    public int quantity;
 
     public Sprite GetSprite()
     {
