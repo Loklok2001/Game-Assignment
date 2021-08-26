@@ -51,7 +51,7 @@ public class InventorySystem : MonoBehaviour
     {
         if (item_list.GetComponent<item>().IsStackable())
         {
-            InventoryItem existing = items.Find(x => x.obj.name == item_list.name);
+            InventoryItem existing = items.Find(x => x.obj.tag == item_list.tag);
 
             if(existing!= null)
             {
