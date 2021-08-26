@@ -9,7 +9,6 @@ public class EnemyHealths : MonoBehaviour
     private int currentHealth;
     public int maxHealth;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +21,6 @@ public class EnemyHealths : MonoBehaviour
     {
         currentHealth -= damage;
         animator.SetTrigger("Hurt");
-
         if (currentHealth <= 0)
         {
             EnemyDie();
