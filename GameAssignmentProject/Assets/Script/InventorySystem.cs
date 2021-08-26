@@ -90,4 +90,21 @@ public class InventorySystem : MonoBehaviour
         }
     }
 
+    public void ShowDescription(int id)
+    {
+        decription_Image.sprite = items_images[id].sprite;
+        decription_Text.text = items[id].obj.name.ToString();
+
+        ui_Description_window.gameObject.SetActive(true);
+        decription_Image.gameObject.SetActive(true);
+        decription_Text.gameObject.SetActive(true);
+    }
+
+    public void HideDescription()
+    {
+        ui_Description_window.gameObject.SetActive(false);
+        decription_Image.gameObject.SetActive(false);
+        decription_Text.gameObject.SetActive(false);
+    }
+
 }

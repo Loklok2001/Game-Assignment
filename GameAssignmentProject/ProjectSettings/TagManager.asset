@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Ground
   - item
+  - coin
+  - paper
   layers:
   - Default
   - TransparentFX
