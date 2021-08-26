@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class InventorySystem : MonoBehaviour
 {
     public List<GameObject> items = new List<GameObject>();
+
     bool isOpen = false;
 
     public GameObject ui_window;
@@ -29,6 +30,7 @@ public class InventorySystem : MonoBehaviour
         ui_window.SetActive(isOpen);
     }
 
+
     public void PickUp(GameObject item)
     {
         items.Add(item);
@@ -42,6 +44,7 @@ public class InventorySystem : MonoBehaviour
         {
             items_images[i].sprite = items[i].GetComponent<SpriteRenderer>().sprite;
             items_images[i].gameObject.SetActive(true);
+            
         }
     }
 
