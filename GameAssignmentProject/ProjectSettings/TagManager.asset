@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Ground
   - item
+  - paper
+  - coin
   layers:
   - Default
   - TransparentFX
@@ -56,4 +58,10 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: HealthBar
+    uniqueID: 706140135
+    locked: 0
+  - name: HealthBarBg
+    uniqueID: 988412669
     locked: 0
