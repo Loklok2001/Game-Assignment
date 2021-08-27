@@ -8,9 +8,10 @@ public class Healths : MonoBehaviour
     private float health = 0f;
     [SerializeField] private float maxHealth = 100f;
 
-    private void Start()
+    public void Start()
     {
         health = maxHealth;
+        animator.SetBool("isDead", false);
     }
 
     public void TakeDamage(float damage)
@@ -26,6 +27,13 @@ public class Healths : MonoBehaviour
     public void PlayerDie()
     {
         animator.SetBool("isDead", true);
+        StartCoroutine(Respawn());
         Debug.Log("Player Die");
+    }
+
+    IEnumerator Respawn()
+    {
+        yield return new WaitForSeconds(1f);
+        FindObjectOfType<LevelManager>().Respawn();
     }
 }

@@ -13,6 +13,7 @@ public class EnemyHealths : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+
     }
 
     // Update is called once per frame
@@ -20,7 +21,6 @@ public class EnemyHealths : MonoBehaviour
     {
         currentHealth -= damage;
         animator.SetTrigger("Hurt");
-
         if (currentHealth <= 0)
         {
             EnemyDie();
