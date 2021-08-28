@@ -4459,6 +4459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4629820745931257472, guid: 6171ca1863760944ba9fd7e60e805d07, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6171ca1863760944ba9fd7e60e805d07, type: 3}
 --- !u!1 &1617366391
 GameObject:
@@ -6431,5 +6432,6 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1928335926}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1203717610292027000, guid: 78c3e0bde434fa94a91c2303e5ebfaf4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 78c3e0bde434fa94a91c2303e5ebfaf4, type: 3}
