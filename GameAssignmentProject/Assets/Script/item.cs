@@ -13,6 +13,7 @@ public class item : MonoBehaviour
     }
 
     public ItemType itemtype;
+    public string itemdescripion;
 
     public Sprite GetSprite()
     {
@@ -43,5 +44,6 @@ public class item : MonoBehaviour
                 return false;
         }
     }
+
 
 }
