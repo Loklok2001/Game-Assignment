@@ -26,12 +26,12 @@ public class PlayerCombat : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Attack") && Time.time >= nextAttackTime)
+        if (Input.GetButtonDown("Attack") && Time.time >= nextAttackTime && !PauseMenu.GameIsPause)
         {
             Attack();
             nextAttackTime = Time.time + 1f / attackrate;
         }
-        if (Input.GetButtonDown("Fire") && Time.time > timeUntilFire)
+        if (Input.GetButtonDown("Fire") && Time.time > timeUntilFire && !PauseMenu.GameIsPause)
         {
             Shoot();
             timeUntilFire = Time.time + fireRate;

@@ -20,7 +20,7 @@ public class Wolfs : MonoBehaviour
     private void FixedUpdate()
     {
         speed = 2;
-        //MoveToNextPoint();
+        MoveToNextPoint();
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -43,27 +43,27 @@ public class Wolfs : MonoBehaviour
         }
     }
 
-    //void MoveToNextPoint()
-    //{
-    //        //Get the next Point Transform
-    //        Transform goalPoint = points[nextID];
-    //        //Flip the enemy
-    //        if (goalPoint.transform.position.x > transform.position.x)
-    //            transform.localScale = new Vector3(1, 1, 1);
-    //        else
-    //            transform.localScale = new Vector3(-1, 1, 1);
-    //        //Move the enemy toward the point
-    //        transform.position = Vector2.MoveTowards(transform.position, goalPoint.position, speed * Time.deltaTime);
-    //        //Check the distance 
-    //        if (Vector2.Distance(transform.position, goalPoint.position) < 1f)
-    //        {
-    //            //Check if end
-    //            if (nextID == points.Count - 1)
-    //                idChangeValue = -1;
-    //            //Check if start
-    //            if (nextID == 0)
-    //                idChangeValue = 1;
-    //            nextID += idChangeValue;
-    //        }
-    //    }
+    void MoveToNextPoint()
+    {
+        //Get the next Point Transform
+        Transform goalPoint = points[nextID];
+        //Flip the enemy
+        if (goalPoint.transform.position.x > transform.position.x)
+            transform.localScale = new Vector3(1, 1, 1);
+        else
+            transform.localScale = new Vector3(-1, 1, 1);
+        //Move the enemy toward the point
+        transform.position = Vector2.MoveTowards(transform.position, goalPoint.position, speed * Time.deltaTime);
+        //Check the distance 
+        if (Vector2.Distance(transform.position, goalPoint.position) < 1f)
+        {
+            //Check if end
+            if (nextID == points.Count - 1)
+                idChangeValue = -1;
+            //Check if start
+            if (nextID == 0)
+                idChangeValue = 1;
+            nextID += idChangeValue;
+        }
+    }
 }

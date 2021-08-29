@@ -38,17 +38,17 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         //Jump
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && !PauseMenu.GameIsPause)
             Jump();
 
         checkGrounded();
 
         //Dash Left
-        if (Input.GetButtonDown("Dash") && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))) 
+        if (!PauseMenu.GameIsPause && Input.GetButtonDown("Dash") && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))) 
         {
             StartCoroutine(Dash(-1f));
         }
-        if (Input.GetButtonDown("Dash") && Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        if (!PauseMenu.GameIsPause && Input.GetButtonDown("Dash") && Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             StartCoroutine(Dash(1f));
         }
