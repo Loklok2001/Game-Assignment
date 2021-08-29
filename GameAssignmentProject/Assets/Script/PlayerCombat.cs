@@ -4,28 +4,39 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
+    PlayerController ps;
 
     public Animator animator;
     public Transform attackPoint;
+    public Transform firingPoint;
     public LayerMask enemyLayer;
+    public GameObject bullet;
 
     public int attackDamage = 5;
     public float attackRange = 0.5f;
     public float attackrate = 2f;
     float nextAttackTime = 0f;
+    float timeUntilFire;
+    public float fireRate = 0.2f;
 
-    // Start is called before the first frame update
-    // Update is called once per frame
+    private void Start()
+    {
+        ps = gameObject.GetComponent<PlayerController>();
+    }
+
     void Update()
     {
-        if (Time.time >= nextAttackTime)
+        if (Input.GetButtonDown("Attack") && Time.time >= nextAttackTime)
         {
-            if (Input.GetButtonDown("Attack"))
-            {
-                Attack();
-                nextAttackTime = Time.time + 1f / attackrate;
-            }
+            Attack();
+            nextAttackTime = Time.time + 1f / attackrate;
         }
+        if (Input.GetButtonDown("Fire") && Time.time > timeUntilFire)
+        {
+            Shoot();
+            timeUntilFire = Time.time + fireRate;
+        }
+
     }
 
     void Attack()
@@ -37,6 +48,12 @@ public class PlayerCombat : MonoBehaviour
         {
             enemy.GetComponent<EnemyHealths>().TakeDamage(attackDamage);
         }
+    }
+
+    void Shoot()
+    {
+        float angle = ps.isFacingRight ? 0f : 180f;
+        Instantiate(bullet, firingPoint.position, Quaternion.Euler(new Vector3(0f, 0f, angle)));
     }
 
     private void OnDrawGizmosSelected()

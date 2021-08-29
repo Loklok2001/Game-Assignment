@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     bool isGround;
     bool isCrouch;
     bool isDashing;
+    public bool isFacingRight = true;
 
 
 
@@ -59,9 +60,15 @@ public class PlayerController : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         //Flip player
         if (horizontalInput > 0.01f)
+        {
             transform.localScale = Vector3.one;
+            isFacingRight = true;
+        }
         else if (horizontalInput < -0.01f)
+        {
             transform.localScale = new Vector3(-1, 1, 1);
+            isFacingRight = false;
+        }
 
         //Crouch
         if (Input.GetButton("Crouch") && isGround)
