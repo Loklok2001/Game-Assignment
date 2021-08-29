@@ -11,6 +11,7 @@ public class Bullets : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = transform.right * bulletSpeed;
+        Destroy(this.gameObject, 3);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
