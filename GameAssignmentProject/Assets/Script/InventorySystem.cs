@@ -40,13 +40,18 @@ public class InventorySystem : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        if(!PauseMenu.GameIsPause)
         {
-            ToggleInventory();
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                ToggleInventory();
+            }
+            else if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                closeInventory();
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.Escape)){
-            closeInventory();
-        }
+
     }
 
     void ToggleInventory()
