@@ -44,11 +44,20 @@ public class InventorySystem : MonoBehaviour
         {
             ToggleInventory();
         }
+        else if (Input.GetKeyDown(KeyCode.Escape)){
+            closeInventory();
+        }
     }
 
     void ToggleInventory()
     {
         isOpen = !isOpen;
+        ui_window.SetActive(isOpen);
+    }
+
+    void closeInventory()
+    {
+        isOpen = false;
         ui_window.SetActive(isOpen);
     }
 
