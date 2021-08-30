@@ -45,5 +45,16 @@ public class item : MonoBehaviour
         }
     }
 
+    public void consume(string itemtag)
+    {
+        switch (itemtag)
+        {
+            case "potion":
+                FindObjectOfType<Healths>().heal();
+                break;
+            default:
+                break;
+        }
 
+    }
 }

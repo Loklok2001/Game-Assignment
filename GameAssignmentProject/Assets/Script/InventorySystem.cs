@@ -6,7 +6,11 @@ using TMPro;
 
 public class InventorySystem : MonoBehaviour
 {
-    
+    private void Start()
+    {
+        Update();
+    }
+
     public TextMeshProUGUI[] quantity;
 
     [System.Serializable]
@@ -31,7 +35,7 @@ public class InventorySystem : MonoBehaviour
 
     public GameObject ui_window;
     public Image[] items_images;
-    public Text[] items_Number;
+    
 
     public GameObject ui_Description_window;
     public Image decription_Image;
@@ -58,6 +62,7 @@ public class InventorySystem : MonoBehaviour
     {
         isOpen = !isOpen;
         ui_window.SetActive(isOpen);
+        Update_Inventory();
     }
 
     void closeInventory()
@@ -88,9 +93,8 @@ public class InventorySystem : MonoBehaviour
             InventoryItem i = new InventoryItem(item_list);
             items.Add(i);
         }
-        
+
         Update_Inventory();
-        
     }
 
     void Update_Inventory()
@@ -102,6 +106,10 @@ public class InventorySystem : MonoBehaviour
             items_images[i].gameObject.SetActive(true);
             quantity[i].text = items[i].stack.ToString();
             quantity[i].gameObject.SetActive(true);
+            if (items[i].obj.tag == "potion")
+            {
+                FindObjectOfType<PotionUI>().getPotionQuantity(items[i].stack);
+            }
         }
         HideDescription();
     }
@@ -139,10 +147,12 @@ public class InventorySystem : MonoBehaviour
 
     public void useitem(int id)
     {
+        Debug.Log($"CONSUMED {items[id].obj.tag}, {items[id].stack}");
 
-        Debug.Log($"CONSUMED {items[id].obj.name}, {items[id].stack}");
+        items[id].obj.GetComponent<item>().consume(items[id].obj.tag);
 
         items[id].stack--;
+
         //items[id].obj.GetComponent<item>()
         if (items[id].stack == 0)
         {
@@ -151,9 +161,6 @@ public class InventorySystem : MonoBehaviour
             items.RemoveAt(id);
         }
 
-        
-
         Update_Inventory();
-        
     }
 }
