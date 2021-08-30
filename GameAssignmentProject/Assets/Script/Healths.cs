@@ -5,7 +5,7 @@ using UnityEngine;
 public class Healths : MonoBehaviour
 {
     public Animator animator;
-    [SerializeField] private float health = 0f;
+    private float health = 0f;
     [SerializeField] private float maxHealth = 100f;
 
     public void Start()
@@ -40,5 +40,9 @@ public class Healths : MonoBehaviour
     public void heal()
     {
         health += 10;
+        if (health > maxHealth)
+        {
+            health = maxHealth;
+        }
     }
 }
