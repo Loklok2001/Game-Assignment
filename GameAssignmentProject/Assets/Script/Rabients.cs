@@ -11,13 +11,5 @@ public class Rabients : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void TakeDamage(int damage)
-    {
-
-    }
-    public void Die()
-    {
-
-    }
 }
 
