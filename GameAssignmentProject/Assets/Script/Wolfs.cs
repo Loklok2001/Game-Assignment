@@ -15,7 +15,6 @@ public class Wolfs : MonoBehaviour
     private float attackDamage = 20;
     private float attackSpeed = 2.5f;
     private float canAttack;
-    bool isAttacking;
 
     private void FixedUpdate()
     {
@@ -29,7 +28,6 @@ public class Wolfs : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             speed = 0;
-            isAttacking = true;
             if (attackSpeed <= canAttack)
             {
                 collision.gameObject.GetComponent<Healths>().TakeDamage(attackDamage);
