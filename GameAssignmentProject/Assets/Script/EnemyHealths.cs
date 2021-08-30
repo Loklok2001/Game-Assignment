@@ -8,18 +8,20 @@ public class EnemyHealths : MonoBehaviour
 
     private int currentHealth;
     public int maxHealth;
+    public EnemyHealthBar Healthbar;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
-
+        Healthbar.SetHealth(currentHealth, maxHealth);
     }
 
     // Update is called once per frame
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        Healthbar.SetHealth(currentHealth, maxHealth);
         animator.SetTrigger("Hurt");
         if (currentHealth <= 0)
         {
