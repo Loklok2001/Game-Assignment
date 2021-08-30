@@ -54,7 +54,7 @@ public class InventorySystem : MonoBehaviour
 
     }
 
-    void ToggleInventory()
+    public void ToggleInventory()
     {
         isOpen = !isOpen;
         ui_window.SetActive(isOpen);
