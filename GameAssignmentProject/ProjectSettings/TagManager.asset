@@ -11,6 +11,7 @@ TagManager:
   - coin
   - paper
   - Bullet
+  - potion
   layers:
   - Default
   - TransparentFX

@@ -153,11 +153,18 @@ public class InventorySystem : MonoBehaviour
 
         items[id].stack--;
 
+        if(items[id].obj.tag == "potion" && items[id].stack == 0)
+        {
+            FindObjectOfType<PotionUI>().getPotionQuantity(0);
+        }
+
         //items[id].obj.GetComponent<item>()
         if (items[id].stack == 0)
         {
-            Destroy(items[id].obj, 0.1f);
-
+            if(items[id].obj.tag != "potion")
+            {
+                Destroy(items[id].obj, 0.1f);
+            }
             items.RemoveAt(id);
         }
 
