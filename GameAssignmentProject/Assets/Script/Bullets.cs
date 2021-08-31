@@ -19,7 +19,8 @@ public class Bullets : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             collision.gameObject.GetComponent<EnemyHealths>().TakeDamage(bulletDamage);
+            Destroy(this.gameObject);
         }
-        Destroy(this.gameObject);
+        
     }
 }
