@@ -16,9 +16,13 @@ public class Bullets : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<EnemyHealths>().TakeDamage(bulletDamage);
+            Destroy(this.gameObject);
+        }
+        if (collision.gameObject.CompareTag("Ground"))
+        {
             Destroy(this.gameObject);
         }
         
