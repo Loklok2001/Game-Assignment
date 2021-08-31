@@ -52,6 +52,7 @@ public class PlayerCombat : MonoBehaviour
 
     void Shoot()
     {
+        animator.SetTrigger("Shoot");
         float angle = ps.isFacingRight ? 0f : 180f;
         Instantiate(bullet, firingPoint.position, Quaternion.Euler(new Vector3(0f, 0f, angle)));
     }
