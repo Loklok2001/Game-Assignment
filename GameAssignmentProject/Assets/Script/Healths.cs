@@ -82,7 +82,7 @@ public class Healths : MonoBehaviour
 
     public void heal()
     {
-        health += 10;
+        health += 4;
         if (health > maxHealth)
         {
             health = maxHealth;
