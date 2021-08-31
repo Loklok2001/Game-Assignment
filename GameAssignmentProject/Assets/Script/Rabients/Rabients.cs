@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class Rabients : MonoBehaviour
 {
-    public Transform rayCast;
     public Transform left;
     public Transform right;
-    public LayerMask raycastMask;
-    public float rayCastLength;
     public float attackDistance;
     public float moveSpeed;
     public float timer;
+    public Transform target;
+    public bool inRange;
+    public GameObject hotzone;
+    public GameObject triggerArea;
 
-    private RaycastHit2D hit;
-    private Transform target;
     private Animator animator;
     private float distance;
     private bool attackMode;
-    private bool inRange;
     private bool cooling;
     private float intTimer;
 
@@ -34,23 +32,12 @@ public class Rabients : MonoBehaviour
         if(!attackMode)
             Move();
 
-        if (!InsideOfLimits() && inRange && !animator.GetCurrentAnimatorStateInfo(0).IsName("RabientAttackLeft"))
+        if (!InsideOfLimits() && !inRange && !animator.GetCurrentAnimatorStateInfo(0).IsName("RabientAttackLeft"))
             SelectTarget();
 
-        if (inRange)
+        if(inRange)
         {
-            hit = Physics2D.Raycast(rayCast.position, transform.right, rayCastLength, raycastMask);
-            RayCastDebugger();
-        }
-
-        if (hit.collider != null)
             EnemyLogic();
-        else if (hit.collider == null)
-            inRange = false;
-
-        if(inRange == false)
-        {
-            StopAttack();
         }
     }
 
@@ -108,24 +95,6 @@ public class Rabients : MonoBehaviour
         animator.SetBool("Attack", false);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            target = collision.transform;
-            inRange = true;
-            Flip();
-        }
-    }
-
-    void RayCastDebugger()
-    {
-        if (distance > attackDistance)
-            Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.red);
-        else if(attackDistance > distance)
-            Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.green);
-    }
-
     public void TriggerCooling()
     {
         cooling = true;
@@ -136,7 +105,7 @@ public class Rabients : MonoBehaviour
         return transform.position.x > left.position.x && transform.position.x < right.position.x;
     }
 
-    private void SelectTarget()
+    public void SelectTarget()
     {
         float distanceToLeft = Vector2.Distance(transform.position, left.position);
         float distanceToRight = Vector2.Distance(transform.position, right.position);
@@ -148,13 +117,13 @@ public class Rabients : MonoBehaviour
         Flip();
     }
 
-    private void Flip()
+    public void Flip()
     {
         Vector3 rotation = transform.eulerAngles;
         if (transform.position.x > target.position.x)
-            rotation.y = 180f;
-        else
             rotation.y = 0f;
+        else
+            rotation.y = 180f;
 
         transform.eulerAngles = rotation;
     }
