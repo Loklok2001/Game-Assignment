@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class WolfArea : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Wolfs enemyParent;
+
+    private void Awake()
     {
-        
+        enemyParent = GetComponentInParent<Wolfs>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            gameObject.SetActive(false);
+            enemyParent.target = collision.transform;
+            enemyParent.inRange = true;
+            enemyParent.hotzone.SetActive(true);
+        }
     }
 }

@@ -28,13 +28,14 @@ public class InfluenzaHotzone : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collisions)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collisions.gameObject.CompareTag("Player"))
         {
+            enemyParent.triggerArea.SetActive(true);
+            Debug.Log("Out");
             inRange = false;
             gameObject.SetActive(false);
-            enemyParent.triggerArea.SetActive(true);
             enemyParent.inRange = false;
             enemyParent.SelectTarget();
         }

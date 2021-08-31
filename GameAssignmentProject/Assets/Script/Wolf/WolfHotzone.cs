@@ -4,15 +4,39 @@ using UnityEngine;
 
 public class WolfHotzone : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Wolfs enemyParent;
+    private bool inRange;
+    private Animator animator;
+
+    private void Awake()
     {
-        
+        enemyParent = GetComponentInParent<Wolfs>();
+        animator = GetComponentInParent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (inRange && !animator.GetCurrentAnimatorStateInfo(0).IsName("WolfAttackRight"))
+            enemyParent.Flip();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            inRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            inRange = false;
+            gameObject.SetActive(false);
+            enemyParent.triggerArea.SetActive(true);
+            enemyParent.inRange = false;
+            enemyParent.SelectTarget();
+        }
     }
 }

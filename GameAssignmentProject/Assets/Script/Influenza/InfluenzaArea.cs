@@ -21,5 +21,4 @@ public class InfluenzaArea : MonoBehaviour
             enemyParent.hotzone.SetActive(true);
         }
     }
-
 }

@@ -2,66 +2,127 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-[RequireComponent(typeof(BoxCollider2D))]
 public class Wolfs : MonoBehaviour
 {
-    public Animator animator;
-    public List<Transform> points;
+    public Transform leftLimit;
+    public Transform rightLimit;
+    public float attackDistance;
+    public float moveSpeed;
+    public float timer;
+    public Transform target;
+    public bool inRange;
+    public GameObject hotzone;
+    public GameObject triggerArea;
 
-    public int nextID = 0;
-    int idChangeValue = 1;
-    private float speed = 2;
-    private float attackDamage = 20;
-    private float attackSpeed = 2.5f;
-    private float canAttack;
+    private Animator animator;
+    private float distance;
+    private bool attackMode;
+    private bool cooling;
+    private float intTimer;
 
-    private void FixedUpdate()
+    private void Awake()
     {
-        speed = 2;
-        MoveToNextPoint();
+        SelectTarget();
+        intTimer = timer;
+        animator = GetComponent<Animator>();
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void Update()
     {
-        
-        if (collision.gameObject.tag == "Player")
+        if (!attackMode)
+            Move();
+
+        if (!InsideOfLimits() && !inRange && !animator.GetCurrentAnimatorStateInfo(0).IsName("WolfAttackRight"))
+            SelectTarget();
+
+        if (inRange)
         {
-            speed = 0;
-            if (attackSpeed <= canAttack)
-            {
-                collision.gameObject.GetComponent<Healths>().TakeDamage(attackDamage);
-                animator.SetTrigger("Attack");
-                canAttack = 0f;
-            }
-            else 
-            {
-                canAttack += Time.deltaTime;
-            }
+            EnemyLogic();
         }
     }
 
-    void MoveToNextPoint()
+    void EnemyLogic()
     {
-        //Get the next Point Transform
-        Transform goalPoint = points[nextID];
-        //Flip the enemy
-        if (goalPoint.transform.position.x > transform.position.x)
-            transform.localScale = new Vector3(1, 1, 1);
+        distance = Vector2.Distance(transform.position, target.position);
+        if (distance > attackDistance)
+        {
+            StopAttack();
+        }
+        else if (attackDistance >= distance && cooling == false)
+            Attack();
+
+        if (cooling)
+        {
+            Cooldown();
+            animator.SetBool("Attack", false);
+        }
+    }
+
+    void Move()
+    {
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("WolfAttackRight"))
+        {
+            Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        }
+    }
+
+    void Cooldown()
+    {
+        timer -= Time.deltaTime;
+
+        if (timer <= 0 && cooling && attackMode)
+        {
+            cooling = false;
+            timer = intTimer;
+        }
+    }
+
+    void Attack()
+    {
+        timer = intTimer;
+        attackMode = true;
+
+        animator.SetBool("Attack", true);
+    }
+
+    void StopAttack()
+    {
+        cooling = false;
+        attackMode = false;
+        animator.SetBool("Attack", false);
+    }
+
+    public void TriggerCooling()
+    {
+        cooling = true;
+    }
+
+    private bool InsideOfLimits()
+    {
+        return transform.position.x > leftLimit.position.x && transform.position.x < rightLimit.position.x;
+    }
+
+    public void SelectTarget()
+    {
+        float distanceToLeft = Vector2.Distance(transform.position, leftLimit.position);
+        float distanceToRight = Vector2.Distance(transform.position, rightLimit.position);
+
+        if (distanceToLeft > distanceToRight)
+            target = leftLimit;
         else
-            transform.localScale = new Vector3(-1, 1, 1);
-        //Move the enemy toward the point
-        transform.position = Vector2.MoveTowards(transform.position, goalPoint.position, speed * Time.deltaTime);
-        //Check the distance 
-        if (Vector2.Distance(transform.position, goalPoint.position) < 1f)
-        {
-            //Check if end
-            if (nextID == points.Count - 1)
-                idChangeValue = -1;
-            //Check if start
-            if (nextID == 0)
-                idChangeValue = 1;
-            nextID += idChangeValue;
-        }
+            target = rightLimit;
+        Flip();
+    }
+
+    public void Flip()
+    {
+        Vector3 rotation = transform.eulerAngles;
+        if (transform.position.x > target.position.x)
+            rotation.y = 180f;
+        else
+            rotation.y = 0f;
+
+        transform.eulerAngles = rotation;
     }
 }
