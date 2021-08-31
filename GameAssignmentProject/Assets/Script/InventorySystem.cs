@@ -55,7 +55,6 @@ public class InventorySystem : MonoBehaviour
                 closeInventory();
             }
         }
-
     }
 
     public void ToggleInventory()
