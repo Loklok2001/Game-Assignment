@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     bool isDashing;
     public bool isFacingRight = true;
 
-
+    private IInteractable interactable;
 
     // Start is called before the first frame update
     void Start()
