@@ -59,3 +59,9 @@ TagManager:
   - name: Platform
     uniqueID: 3184123301
     locked: 0
+  - name: Player
+    uniqueID: 3178383087
+    locked: 0
+  - name: Chest
+    uniqueID: 131534855
+    locked: 0
