@@ -71,6 +71,11 @@ public class Chest : MonoBehaviour
             quantity[i].text = items[i].stack.ToString();
             quantity[i].gameObject.SetActive(true);
         }
+
+        if(items == null)
+        {
+            DestroyChest();
+        }
     }
 
     void HideAll()
@@ -88,13 +93,10 @@ public class Chest : MonoBehaviour
 
     public void clickitem(int id)
     {
-        Debug.Log($"CONSUMED {items[id].obj.tag}, {items[id].stack}");
-
         FindObjectOfType<InventorySystem>().PickUp(items[id].obj);
 
         items[id].stack--;
 
-        //items[id].obj.GetComponent<item>()
         if (items[id].stack == 0)
         {
 
@@ -102,6 +104,12 @@ public class Chest : MonoBehaviour
         }
 
         Update_Chest();
+    }
+
+    public void DestroyChest()
+    {
+        Debug.Log("noob chest");
+        Destroy(this.gameObject);
     }
 
 }
