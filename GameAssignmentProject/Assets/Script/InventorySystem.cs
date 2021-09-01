@@ -11,8 +11,6 @@ public class InventorySystem : MonoBehaviour
         Update();
     }
 
-    public TextMeshProUGUI[] quantity;
-
     [System.Serializable]
     public class InventoryItem
     {
@@ -35,7 +33,7 @@ public class InventorySystem : MonoBehaviour
 
     public GameObject ui_window;
     public Image[] items_images;
-    
+    public TextMeshProUGUI[] quantity;
 
     public GameObject ui_Description_window;
     public Image decription_Image;
@@ -139,6 +137,7 @@ public class InventorySystem : MonoBehaviour
 
     public void HideDescription()
     {
+        ui_Description_window.gameObject.SetActive(false);
         decription_Title.gameObject.SetActive(false);
         decription_Image.gameObject.SetActive(false);
         decription_Text.gameObject.SetActive(false);
