@@ -36,6 +36,10 @@ public class PlayerCombat : MonoBehaviour
             Shoot();
             timeUntilFire = Time.time + fireRate;
         }
+        if (Input.GetButtonDown("potion"))
+        {
+            FindObjectOfType<InventorySystem>().UsePotion();
+        }
 
     }
 

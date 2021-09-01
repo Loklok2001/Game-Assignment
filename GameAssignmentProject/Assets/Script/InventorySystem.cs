@@ -168,4 +168,45 @@ public class InventorySystem : MonoBehaviour
 
         Update_Inventory();
     }
+
+    public void UsePotion()
+    {
+        int id = -1;
+        Debug.Log("fker");
+
+        for(int i = 0; i < items.Count; i++)
+        {
+            if (items[i].obj.tag == "potion")
+            {
+                id = i;
+                Debug.Log("fker2");
+            }
+        }
+        if(id != -1)
+        {
+            Debug.Log($"CONSUMED {items[id].obj.tag}, {items[id].stack}");
+
+            items[id].obj.GetComponent<item>().consume(items[id].obj.tag);
+
+            items[id].stack--;
+
+            if (items[id].obj.tag == "potion" && items[id].stack == 0)
+            {
+                FindObjectOfType<PotionUI>().getPotionQuantity(0);
+            }
+
+            //items[id].obj.GetComponent<item>()
+            if (items[id].stack == 0)
+            {
+                if (items[id].obj.tag != "potion")
+                {
+                    Destroy(items[id].obj, 0.1f);
+                }
+                items.RemoveAt(id);
+            }
+
+            Update_Inventory();
+        }
+
+    }
 }

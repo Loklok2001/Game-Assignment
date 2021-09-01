@@ -14,7 +14,7 @@ public class Chest : MonoBehaviour
     private bool isOpen = false;
 
     [System.Serializable]
-    public class ChestItem
+    private class ChestItem
     {
         public GameObject obj;
         public int stack = 0;
@@ -25,11 +25,15 @@ public class Chest : MonoBehaviour
             stack = s;
         }
     }
-    public List<ChestItem> items = new List<ChestItem>();
 
-    public GameObject chest_UI;
-    public Image[] items_images;
-    public TextMeshProUGUI[] quantity;
+    [SerializeField]
+    private List<ChestItem> items = new List<ChestItem>();
+    [SerializeField]
+    private GameObject chest_UI;
+    [SerializeField]
+    private Image[] items_images;
+    [SerializeField]
+    private TextMeshProUGUI[] quantity;
 
     public void updateChest()
     {

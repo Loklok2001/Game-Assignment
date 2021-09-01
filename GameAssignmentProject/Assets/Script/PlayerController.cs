@@ -52,6 +52,8 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(Dash(1f));
         }
+
+        
     }
 
     // Update is called once per frame

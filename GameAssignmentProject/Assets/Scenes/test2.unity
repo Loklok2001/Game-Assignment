@@ -6271,15 +6271,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1768547108319503400, guid: 0d956274ba8f1fa4589161e244d515c3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1768547109138747136, guid: 0d956274ba8f1fa4589161e244d515c3, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1768547109138747136, guid: 0d956274ba8f1fa4589161e244d515c3, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2191212319450435936, guid: 0d956274ba8f1fa4589161e244d515c3, type: 3}
       propertyPath: m_Name
