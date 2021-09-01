@@ -99,7 +99,6 @@ public class Chest : MonoBehaviour
 
         if (items[id].stack == 0)
         {
-
             items.RemoveAt(id);
         }
 
