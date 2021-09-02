@@ -16,8 +16,6 @@ public class Shop : MonoBehaviour
         {
             ToggleShop();
         }
-
-        
     }
 
     public void ToggleShop()
