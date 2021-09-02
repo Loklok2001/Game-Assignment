@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+
     public void QuitButton()
     {
         Application.Quit();
@@ -14,6 +16,12 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Sample");
+        SceneManager.LoadScene("Stage1");
+    }
+
+    public void SetFullscreen(bool isFullscreen)
+    {
+        Debug.Log("helloo");
+        Screen.fullScreen = isFullscreen;
     }
 }
