@@ -70,7 +70,6 @@ public class InventorySystem : MonoBehaviour
         ui_window.SetActive(isOpen);
     }
 
-
     public void PickUp(GameObject item_list)
     {
         if (item_list.GetComponent<item>().IsStackable())
@@ -115,8 +114,6 @@ public class InventorySystem : MonoBehaviour
             }
         }
 
-        
-
         HideDescription();
     }
 
@@ -154,28 +151,30 @@ public class InventorySystem : MonoBehaviour
 
     public void useitem(int id)
     {
-        Debug.Log($"CONSUMED {items[id].obj.tag}, {items[id].stack}");
-
-        items[id].obj.GetComponent<item>().consume(items[id].obj.tag);
-
-        items[id].stack--;
-
-        if(items[id].obj.tag == "potion" && items[id].stack == 0)
+        if (items[id].obj.GetComponent<item>().consumeitem())
         {
-            FindObjectOfType<PotionUI>().getPotionQuantity(0);
-        }
+            items[id].obj.GetComponent<item>().consume(items[id].obj.tag);
 
-        //items[id].obj.GetComponent<item>()
-        if (items[id].stack == 0)
-        {
-            if(items[id].obj.tag != "potion")
+            items[id].stack--;
+
+            if (items[id].obj.tag == "potion" && items[id].stack == 0)
             {
-                Destroy(items[id].obj, 0.1f);
+                FindObjectOfType<PotionUI>().getPotionQuantity(0);
             }
-            items.RemoveAt(id);
+
+            //items[id].obj.GetComponent<item>()
+            if (items[id].stack == 0)
+            {
+                if (items[id].obj.tag != "potion")
+                {
+                    Destroy(items[id].obj, 0.1f);
+                }
+                items.RemoveAt(id);
+            }
+
+            Update_Inventory();
         }
 
-        Update_Inventory();
     }
 
     public void UsePotion()

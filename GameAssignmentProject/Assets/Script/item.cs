@@ -36,11 +36,23 @@ public class item : MonoBehaviour
         switch (itemtype)
         {
             default:
-            case ItemType.paper:
             case ItemType.potion:
-            case ItemType.bullet:
+            case ItemType.paper:
                 return true;
             case ItemType.enxyclopedia:
+                return false;
+        }
+    }
+
+    public bool consumeitem()
+    {
+        switch (itemtype)
+        {
+            default:
+            case ItemType.potion:
+                return true;
+            case ItemType.enxyclopedia:
+            case ItemType.paper:
                 return false;
         }
     }
