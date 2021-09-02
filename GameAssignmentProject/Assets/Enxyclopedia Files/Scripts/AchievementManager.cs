@@ -32,6 +32,30 @@ public class AchievementManager : MonoBehaviour
         achievementManagerInstance = this;
     }
 
+    bool isOpen = false;
+    [SerializeField]
+    public GameObject book_ui_window;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            ToggleBook();
+        }
+    }
+
+    public void ToggleBook()
+    {
+        isOpen = !isOpen;
+        book_ui_window.SetActive(isOpen);
+    }
+
+    public void closeBook()
+    {
+        isOpen = false;
+        book_ui_window.SetActive(isOpen);
+    }
+
     void Start()
     {
         //LoadAchievementData();
