@@ -6,6 +6,8 @@ using TMPro;
 
 public class InventorySystem : MonoBehaviour
 {
+    public static int sampleQuantity;
+
     private void Start()
     {
         Update();
@@ -107,7 +109,14 @@ public class InventorySystem : MonoBehaviour
             {
                 FindObjectOfType<PotionUI>().getPotionQuantity(items[i].stack);
             }
+            if (items[i].obj.tag == "paper")
+            {
+                sampleQuantity = items[i].stack;
+            }
         }
+
+        
+
         HideDescription();
     }
 
@@ -199,6 +208,42 @@ public class InventorySystem : MonoBehaviour
             if (items[id].stack == 0)
             {
                 if (items[id].obj.tag != "potion")
+                {
+                    Destroy(items[id].obj, 0.1f);
+                }
+                items.RemoveAt(id);
+            }
+
+            Update_Inventory();
+        }
+
+    }
+
+    public void usesample(int used)
+    {
+        int id = -1;
+
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (items[i].obj.tag == "paper")
+            {
+                id = i;
+            }
+        }
+
+        if (id != -1)
+        {
+            Debug.Log($"CONSUMED {items[id].obj.tag}, {items[id].stack}");
+
+            items[id].obj.GetComponent<item>().consume(items[id].obj.tag);
+
+            items[id].stack -= used;
+            sampleQuantity = items[id].stack;
+
+            //items[id].obj.GetComponent<item>()
+            if (items[id].stack == 0)
+            {
+                if (items[id].obj.tag != "paper")
                 {
                     Destroy(items[id].obj, 0.1f);
                 }

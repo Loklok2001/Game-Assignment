@@ -96,4 +96,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemtype: 0
-  itemdescripion: recover 10hp
+  itemdescripion: recover 4hp
