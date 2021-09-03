@@ -9,6 +9,7 @@ public class Boss : MonoBehaviour
     public Transform groundCheckPoint;
     public Transform wallCheckPoint;
     public Transform groundedCheckPoint;
+    public EnemyHealths health;
     public Transform player;
     public float circleRadius;
     public LayerMask groundLayer;
@@ -17,6 +18,7 @@ public class Boss : MonoBehaviour
     public Vector2 lineOfSite;
     public Animator animator;
 
+    private bool stage2 = false;
     private bool checkingWall;
     private bool checkingGround;
     private bool isGrounded;
@@ -34,6 +36,9 @@ public class Boss : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (health.getHealth() < (health.maxHealth / 2))
+            this.enabled = false;
+
         checkingGround = Physics2D.OverlapCircle(groundCheckPoint.position, circleRadius, groundLayer);
         checkingWall = Physics2D.OverlapCircle(wallCheckPoint.position, circleRadius, groundLayer);
         isGrounded = Physics2D.OverlapBox(groundedCheckPoint.position, boxSize, 0, groundLayer);
@@ -61,11 +66,11 @@ public class Boss : MonoBehaviour
 
     void JumpAttack()
     {
-        float distanceFromPlayer = player.position.x - transform.position.x;
-        if(isGrounded)
-        {
-            rb.AddForce(new Vector2(distanceFromPlayer, jumpHeight), ForceMode2D.Impulse);
-        }
+            float distanceFromPlayer = player.position.x - transform.position.x;
+            if (isGrounded)
+            {
+                rb.AddForce(new Vector2(distanceFromPlayer, jumpHeight), ForceMode2D.Impulse);
+            }
     }
 
     void FlipTowardsPlayer()

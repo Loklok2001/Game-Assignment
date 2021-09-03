@@ -33,10 +33,15 @@ public class EnemyHealths : MonoBehaviour
     {
         Debug.Log("Enemy died!");
         animator.SetBool("isDead", true);
+        animator.SetTrigger("isDead");
 
         //FindObjectOfType<itemDrop>().DropItems();
 
-        Destroy(gameObject);
+        Destroy(gameObject, 0.3f);
     }
 
+    public int getHealth()
+    {
+        return currentHealth;
+    }
 }
