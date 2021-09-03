@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ClickBtn : MonoBehaviour
 {
+    GameObject teleportPointShow;
     public Text clickDisplay;
     public int clicks;
 
@@ -23,6 +24,9 @@ public class ClickBtn : MonoBehaviour
 
         }
 
-
+        if(clicks >= 15)
+        {
+            teleportPointShow.gameObject.SetActive(true);
+        }
     }
 }

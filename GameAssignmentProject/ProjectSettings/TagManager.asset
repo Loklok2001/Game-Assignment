@@ -24,7 +24,7 @@ TagManager:
   - Enemy
   - Player
   - Chest
-  - 
+  - teleport
   - 
   - 
   - 
@@ -67,4 +67,7 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 696859869
+    locked: 0
+  - name: teleport
+    uniqueID: 2511670877
     locked: 0
