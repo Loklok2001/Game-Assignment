@@ -216,8 +216,6 @@ public class InventorySystem : MonoBehaviour
     {
         int id = -1;
 
-        Debug.Log("asdf");
-
         for (int i = 0; i < items.Count; i++)
         {
             if (items[i].obj.tag == "paper")
