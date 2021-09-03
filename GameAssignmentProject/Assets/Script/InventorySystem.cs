@@ -162,7 +162,6 @@ public class InventorySystem : MonoBehaviour
                 FindObjectOfType<PotionUI>().getPotionQuantity(0);
             }
 
-            //items[id].obj.GetComponent<item>()
             if (items[id].stack == 0)
             {
                 if (items[id].obj.tag != "potion")

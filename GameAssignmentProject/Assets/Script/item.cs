@@ -49,9 +49,9 @@ public class item : MonoBehaviour
         switch (itemtype)
         {
             default:
-            case ItemType.potion:
                 return true;
             case ItemType.enxyclopedia:
+            case ItemType.potion:
             case ItemType.paper:
                 return false;
         }
