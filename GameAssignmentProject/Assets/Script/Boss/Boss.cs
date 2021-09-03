@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
+    #region Public
     public float moveSpeed = 1;
     public float jumpHeight;
     public Transform groundCheckPoint;
     public Transform wallCheckPoint;
     public Transform groundedCheckPoint;
-    public EnemyHealths health;
     public Transform player;
     public float circleRadius;
     public LayerMask groundLayer;
@@ -17,7 +17,11 @@ public class Boss : MonoBehaviour
     public Vector2 boxSize;
     public Vector2 lineOfSite;
     public Animator animator;
+    public EnemyHealths health;
+    public BossStage2 stageScript;
+    #endregion
 
+    #region Private
     private bool stage2 = false;
     private bool checkingWall;
     private bool checkingGround;
@@ -26,6 +30,7 @@ public class Boss : MonoBehaviour
     private float moveDirection = 1;
     private bool facingRight = true;
     private Rigidbody2D rb;
+    #endregion
 
     // Start is called before the first frame update
     void Start()
@@ -37,15 +42,26 @@ public class Boss : MonoBehaviour
     void FixedUpdate()
     {
         if (health.getHealth() < (health.maxHealth / 2))
+            stage2 = true;
+
+        if (stage2)
+        {
+            animator.SetBool("stage2", true);
+            animator.SetBool("canSeePlayer", false);
+            stageScript.enabled = true;
             this.enabled = false;
+        }
 
-        checkingGround = Physics2D.OverlapCircle(groundCheckPoint.position, circleRadius, groundLayer);
-        checkingWall = Physics2D.OverlapCircle(wallCheckPoint.position, circleRadius, groundLayer);
-        isGrounded = Physics2D.OverlapBox(groundedCheckPoint.position, boxSize, 0, groundLayer);
-        canSeePlayer = Physics2D.OverlapBox(transform.position, lineOfSite, 0, playerLayer);
+        else
+        {
+            checkingGround = Physics2D.OverlapCircle(groundCheckPoint.position, circleRadius, groundLayer);
+            checkingWall = Physics2D.OverlapCircle(wallCheckPoint.position, circleRadius, groundLayer);
+            isGrounded = Physics2D.OverlapBox(groundedCheckPoint.position, boxSize, 0, groundLayer);
+            canSeePlayer = Physics2D.OverlapBox(transform.position, lineOfSite, 0, playerLayer);
 
-        animator.SetBool("canSeePlayer", canSeePlayer);
-        animator.SetBool("isGrounded", isGrounded);
+            animator.SetBool("canSeePlayer", canSeePlayer);
+            animator.SetBool("isGrounded", isGrounded);
+        }
 
         if(!canSeePlayer && isGrounded)
             Patrolling();
