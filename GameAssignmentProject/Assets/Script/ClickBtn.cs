@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ClickBtn : MonoBehaviour
 {
-    GameObject teleportPointShow;
+    public GameObject teleportPointShow;
     public Text clickDisplay;
     public int clicks;
 
