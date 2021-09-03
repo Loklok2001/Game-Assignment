@@ -350,11 +350,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48357609}
   m_CullTransparentMesh: 0
---- !u!4 &75143752 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4771791885391441565, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
-  m_PrefabInstance: {fileID: 953127900}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &92653497
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 353eb64fb7ff129469d468e98d569e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teleportPointShow: {fileID: 0}
   clickDisplay: {fileID: 1571558698}
   clicks: 0
 --- !u!1 &156241586
@@ -12036,7 +12032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc99be2fe58c8f44b88a9f4c7f9c101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 75143752}
+  player: {fileID: 1584495219}
   xWidthC: 87
   yHeightC: 10
 --- !u!1 &638656481
