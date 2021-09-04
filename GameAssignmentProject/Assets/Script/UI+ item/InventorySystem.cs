@@ -108,7 +108,7 @@ public class InventorySystem : MonoBehaviour
             {
                 FindObjectOfType<PotionUI>().getPotionQuantity(items[i].stack);
             }
-            if (items[i].obj.tag == "paper")
+            if (items[i].obj.tag == "Sample")
             {
                 sampleQuantity = items[i].stack;
             }
@@ -132,7 +132,7 @@ public class InventorySystem : MonoBehaviour
     public void ShowDescription(int id)
     {
         decription_Image.sprite = items_images[id].sprite;
-        decription_Title.text = items[id].obj.name.ToString();
+        decription_Title.text = items[id].obj.tag.ToString();
         decription_Text.text = items[id].obj.GetComponent<item>().itemdescripion;
 
         ui_Description_window.gameObject.SetActive(true);
@@ -218,7 +218,7 @@ public class InventorySystem : MonoBehaviour
 
         for (int i = 0; i < items.Count; i++)
         {
-            if (items[i].obj.tag == "paper")
+            if (items[i].obj.tag == "Sample")
             {
                 id = i;
             }
@@ -233,7 +233,7 @@ public class InventorySystem : MonoBehaviour
 
             if (items[id].stack == 0)
             {
-                if (items[id].obj.tag != "paper")
+                if (items[id].obj.tag != "Sample")
                 {
                     Destroy(items[id].obj, 0.1f);
                 }

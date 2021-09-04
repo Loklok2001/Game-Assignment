@@ -13,6 +13,7 @@ TagManager:
   - Bullet
   - potion
   - Chest
+  - Sample
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - Player
   - Chest
   - teleport
-  - 
+  - item
   - 
   - 
   - 
@@ -70,4 +71,7 @@ TagManager:
     locked: 0
   - name: teleport
     uniqueID: 2511670877
+    locked: 0
+  - name: item
+    uniqueID: 2309295455
     locked: 0

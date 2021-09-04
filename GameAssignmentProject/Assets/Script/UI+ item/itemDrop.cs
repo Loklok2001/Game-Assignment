@@ -7,9 +7,9 @@ public class itemDrop : MonoBehaviour
     public GameObject ItemModel;
     public Transform enemydie;
 
-    public void DropItems()
+    public void DropItems(GameObject gameobject)
     {
-        enemydie = GetComponent<Transform>().transform;
+        enemydie = gameobject.transform;
         GameObject item = Instantiate(ItemModel, enemydie.position, Quaternion.identity);
     }
 }

@@ -109,8 +109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_AnchoredPosition: {x: 0.00009918213, y: 0}
+  m_SizeDelta: {x: -0.00015259, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7772319453750645694
 CanvasRenderer:
@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 4491668384755050736}
   - component: {fileID: 4491668384755050743}
   - component: {fileID: 4491668384755050742}
+  - component: {fileID: 5319740542491008406}
   m_Layer: 7
   m_Name: Bat 1
   m_TagString: Enemy
@@ -336,6 +337,20 @@ MonoBehaviour:
   fireRate: 1
   bullet: {fileID: 1436676288827702692, guid: 311c6be1804d39e40afbe6c6643f91a5, type: 3}
   bulletParent: {fileID: 4491668384555817579}
+--- !u!114 &5319740542491008406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4491668384755050741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d889dfc47c7b3d44484cd30791aad86c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemModel: {fileID: 4629820745931257477, guid: 6171ca1863760944ba9fd7e60e805d07, type: 3}
+  enemydie: {fileID: 4491668384755050739}
 --- !u!1 &6763121935735471811
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,8 +384,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: -0.00000023841858}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.00000023841858}
+  m_SizeDelta: {x: 0.0000076294, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7801044230929922516
 GameObject:

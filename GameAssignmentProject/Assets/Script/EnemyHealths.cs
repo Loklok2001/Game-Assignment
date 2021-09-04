@@ -35,7 +35,7 @@ public class EnemyHealths : MonoBehaviour
         animator.SetBool("isDead", true);
         animator.SetTrigger("isDead");
 
-        //FindObjectOfType<itemDrop>().DropItems();
+        FindObjectOfType<itemDrop>().DropItems(this.gameObject);
 
         Destroy(gameObject, 0.3f);
     }
