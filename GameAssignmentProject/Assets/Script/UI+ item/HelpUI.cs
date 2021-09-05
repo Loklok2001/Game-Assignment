@@ -9,17 +9,10 @@ public class HelpUI : MonoBehaviour
 
     private void Update()
     {
-        if (!PauseMenu.GameIsPause)
-        {
-            if (Input.GetKeyDown(KeyCode.I))
-            {
-                ToggleHelp();
-            }
-            else if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                closeHelp();
-            }
-        }
+        //if (!PauseMenu.GameIsPause)
+        //{
+        //    ToggleHelp();
+        //}
     }
 
     public void ToggleHelp()
