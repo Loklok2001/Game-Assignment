@@ -39,10 +39,11 @@ public class PauseMenu : MonoBehaviour
         GameIsPause = true;
     }
 
-    public void QuitGame()
-    {
-        GameIsPause = false;
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu");
-    }
+    //public void QuitGame()
+    //{
+    //    GameIsPause = false;
+    //    Time.timeScale = 1f;
+    //    FindObjectOfType<MainMenu>().Save_and_Exit();
+    //    //SceneManager.LoadScene("MainMenu");
+    //}
 }
