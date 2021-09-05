@@ -17,6 +17,8 @@ public class Healths : MonoBehaviour
     public Sprite halfHeart;
     public Sprite emptyHeart;
 
+    public GameObject diedUI; 
+
     public void Start()
     {
         health = maxHealth;
@@ -69,15 +71,18 @@ public class Healths : MonoBehaviour
 
     public void PlayerDie()
     {
+        diedUI.gameObject.SetActive(true);
         animator.SetBool("isDead", true);
-        StartCoroutine(Respawn());
+        //StartCoroutine(Respawn());
         Debug.Log("Player Die");
     }
 
-    IEnumerator Respawn()
+    public void Respawn()
     {
-        yield return new WaitForSeconds(1f);
+        //yield return new WaitForSeconds(1f);
+        
         FindObjectOfType<LevelManager>().Respawn();
+        diedUI.gameObject.SetActive(false) ;
     }
 
     public void heal()

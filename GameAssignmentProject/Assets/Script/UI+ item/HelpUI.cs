@@ -9,10 +9,7 @@ public class HelpUI : MonoBehaviour
 
     private void Update()
     {
-        //if (!PauseMenu.GameIsPause)
-        //{
-        //    ToggleHelp();
-        //}
+
     }
 
     public void ToggleHelp()
