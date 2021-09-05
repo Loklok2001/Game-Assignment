@@ -49,8 +49,8 @@ public class MainMenu : MonoBehaviour
         PauseMenu.GameIsPause = false;
         Time.timeScale = 1f;
         Scene_index = SceneManager.GetActiveScene().buildIndex;
-
-        if(Scene_index == 2)
+        //Scene_index = PlayerPrefs.GetInt("Saved");
+        if (Scene_index == 2)
         {
             PlayerPrefs.SetInt("islock", 1);
             PlayerPrefs.Save();
