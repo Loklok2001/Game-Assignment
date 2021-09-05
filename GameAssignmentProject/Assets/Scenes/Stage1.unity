@@ -55246,6 +55246,18 @@ PrefabInstance:
       propertyPath: hearts.Array.data[9]
       value: 
       objectReference: {fileID: 1684645013}
+    - target: {fileID: 1154380264927397938, guid: b5171e6ac05db564bb3b55bfc1e4908b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.950245
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154380264927397938, guid: b5171e6ac05db564bb3b55bfc1e4908b, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00068849325
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154380264927397938, guid: b5171e6ac05db564bb3b55bfc1e4908b, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.06999999
+      objectReference: {fileID: 0}
     - target: {fileID: 1154380264927397942, guid: b5171e6ac05db564bb3b55bfc1e4908b, type: 3}
       propertyPath: ui_window
       value: 

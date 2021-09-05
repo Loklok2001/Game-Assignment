@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     private Rigidbody2D rb;
     public Collider2D standingCollider;
+    public Collider2D crouchingCollider;
     public Transform Ceiling;
     public Transform Grounds;
     public LayerMask Layer;
@@ -52,8 +53,8 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(Dash(1f));
         }
+        animator.SetBool("Dash", isDashing);
 
-        
     }
 
     // Update is called once per frame
@@ -88,7 +89,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("Walk", horizontalInput != 0);
         animator.SetBool("Ground", isGround);
         animator.SetBool("Crouch", isCrouch);
-        animator.SetBool("Dash", isDashing);
+        
 
 
         if (isCrouch)
@@ -109,6 +110,7 @@ public class PlayerController : MonoBehaviour
     private void Crouch()
     {
         standingCollider.enabled = !isCrouch;
+        crouchingCollider.enabled = isCrouch;
     }
 
     IEnumerator Dash (float direction)
