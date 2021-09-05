@@ -7,8 +7,10 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     int Saved_scene;
-    int Scene_index;
-    public GameObject SavedData;
+    public int Scene_index;
+    public int islock = 0;
+    public GameObject lockButton;
+    public GameObject unlockButton;
 
     public void QuitButton()
     {
@@ -16,19 +18,30 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Game closed");
     }
 
-    public void StartGame()
+    public void Chapter1()
     {
         SceneManager.LoadSceneAsync(1);
     }
 
-    public void Load_saced_scene()
+    public void Chapter2()
     {
-        Saved_scene = PlayerPrefs.GetInt("Saved");
+        SceneManager.LoadSceneAsync(2);
+    }
 
-        if (Saved_scene != 0)
-            SceneManager.LoadSceneAsync(Saved_scene);
+    public void unlock()
+    {
+        Scene_index = PlayerPrefs.GetInt("Saved");
+
+        if (Scene_index == 2 || islock == 1)
+        {
+            unlockButton.SetActive(true);
+            lockButton.SetActive(false);
+        }
         else
-            return;
+        {
+            unlockButton.SetActive(false);
+            lockButton.SetActive(true);
+        }
     }
 
     public void Save_and_Exit()
@@ -36,6 +49,12 @@ public class MainMenu : MonoBehaviour
         PauseMenu.GameIsPause = false;
         Time.timeScale = 1f;
         Scene_index = SceneManager.GetActiveScene().buildIndex;
+
+        if(Scene_index == 2)
+        {
+            PlayerPrefs.SetInt("islock", 1);
+            PlayerPrefs.Save();
+        }
 
         PlayerPrefs.SetInt("Saved", Scene_index);
         PlayerPrefs.Save();
@@ -45,10 +64,5 @@ public class MainMenu : MonoBehaviour
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
-    }
-
-    public void Next_Scene()
-    {
-        Scene_index++;
     }
 }
