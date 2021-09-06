@@ -35,7 +35,7 @@ public class EnemyHealths : MonoBehaviour
         {
             FindObjectOfType<Bat_Sound>().Bat_hited_sound();
         }
-        else if (name == "Rab")
+        else if (name == "Rab" || name == "Inf")
         {
             FindObjectOfType<Zombie_Sound>().Zombie_hited_sound();
         }
@@ -55,7 +55,7 @@ public class EnemyHealths : MonoBehaviour
         {
             FindObjectOfType<Bat_Sound>().Bat_died_sound();
         }
-        else if(name == "Rab")
+        else if (name == "Rab" || name == "Inf")
         {
             FindObjectOfType<Zombie_Sound>().Zombie_died_sound();
         }
