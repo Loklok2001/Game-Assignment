@@ -1156,11 +1156,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 153164367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 353eb64fb7ff129469d468e98d569e8d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5946b1977bdfd6b40917747625c6d97e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportPointShow: {fileID: 0}
-  clickDisplay: {fileID: 1107447909}
+  clickDisplay: {fileID: 0}
   clicks: 0
 --- !u!1 &154869319
 GameObject:
@@ -13135,7 +13134,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 153164369}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: ClickBtn2, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 1
         m_Arguments:
@@ -35753,7 +35752,7 @@ PrefabInstance:
       objectReference: {fileID: 1964107744}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[0].ID
@@ -35769,6 +35768,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[3].ID
+      value: Rabies4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
+      propertyPath: achievements.Array.data[4].ID
       value: Rabies4
       objectReference: {fileID: 0}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
@@ -35800,6 +35803,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: d2d88a977a789654fb9b27d606604f06, type: 3}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
+      propertyPath: achievements.Array.data[4].goal
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
+      propertyPath: achievements.Array.data[4].icon
+      value: 
+      objectReference: {fileID: 21300000, guid: d2d88a977a789654fb9b27d606604f06, type: 3}
+    - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[0].hidden
       value: 1
       objectReference: {fileID: 0}
@@ -35809,6 +35820,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[3].hidden
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
+      propertyPath: achievements.Array.data[4].hidden
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
@@ -35825,6 +35840,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[3].display
+      value: Rabies Sturcture
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
+      propertyPath: achievements.Array.data[4].display
       value: Rabies Sturcture
       objectReference: {fileID: 0}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
@@ -35850,6 +35869,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[3].description
+      value: 'Rhabdoviruses are approximately 180 nm long and 75 nm wide. The rabies
+        genome encodes five proteins: nucleoprotein (N), phosphoprotein (P), matrix
+        protein (M), glycoprotein (G) and polymerase (L). All rhabdoviruses have
+        two major structural components: a helical ribonucleoprotein core (RNP) and
+        a surrounding envelope. In the RNP, genomic RNA is tightly encased by the
+        nucleoprotein. Two other viral proteins, the phospoprotein and the large
+        protein (L-protein or polymerase) are associated with the RNP.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
+      propertyPath: achievements.Array.data[4].description
       value: 'Rhabdoviruses are approximately 180 nm long and 75 nm wide. The rabies
         genome encodes five proteins: nucleoprotein (N), phosphoprotein (P), matrix
         protein (M), glycoprotein (G) and polymerase (L). All rhabdoviruses have
