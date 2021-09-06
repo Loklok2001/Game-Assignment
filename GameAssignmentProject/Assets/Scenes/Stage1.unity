@@ -61613,10 +61613,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 482908026}
     m_Modifications:
+    - target: {fileID: 828997787435007716, guid: d4b1f577554e1f443942cc58c0e38a4b, type: 3}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ad4dc0e25ab0c194daf27ecf07f4ee3e, type: 3}
     - target: {fileID: 828997787435007720, guid: d4b1f577554e1f443942cc58c0e38a4b, type: 3}
       propertyPath: diedUI
       value: 
       objectReference: {fileID: 445939557}
+    - target: {fileID: 828997787435007720, guid: d4b1f577554e1f443942cc58c0e38a4b, type: 3}
+      propertyPath: potionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4877d8060c13076489885eca26215cf7, type: 3}
     - target: {fileID: 828997787435007720, guid: d4b1f577554e1f443942cc58c0e38a4b, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
