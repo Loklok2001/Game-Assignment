@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-
-
 public class Healths : MonoBehaviour
 {
     public Animator animator;
@@ -16,11 +13,14 @@ public class Healths : MonoBehaviour
     public Sprite fullHeart;
     public Sprite halfHeart;
     public Sprite emptyHeart;
+    public AudioClip hurtSound;
+    static AudioSource audioSrc;
 
     public GameObject diedUI; 
 
     public void Start()
     {
+        audioSrc = GetComponent<AudioSource>();
         health = maxHealth;
         animator.SetBool("isDead", false);
     }
@@ -63,6 +63,7 @@ public class Healths : MonoBehaviour
     {
         health -= damage;
         animator.SetTrigger("Hurt");
+        audioSrc.PlayOneShot(hurtSound);
         if (health <= 0f) {
             health = 0f;
             PlayerDie();
