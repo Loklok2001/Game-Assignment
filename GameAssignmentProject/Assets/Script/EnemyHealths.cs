@@ -37,7 +37,14 @@ public class EnemyHealths : MonoBehaviour
 
         FindObjectOfType<itemDrop>().DropItems(this.gameObject);
 
-        if(gameObject.name == "Boss")
+        string name = gameObject.name.Substring(0,3);
+
+        if(name == "Bat")
+        {
+            FindObjectOfType<Bat_Sound>().Bat_died_sound();
+        }
+
+        if (gameObject.name == "Boss")
         {
             FindObjectOfType<ShowChest>().DisplayChest();
         }
