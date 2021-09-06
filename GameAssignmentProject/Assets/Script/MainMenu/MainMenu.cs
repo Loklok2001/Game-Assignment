@@ -50,11 +50,11 @@ public class MainMenu : MonoBehaviour
         Time.timeScale = 1f;
         Scene_index = SceneManager.GetActiveScene().buildIndex;
         //Scene_index = PlayerPrefs.GetInt("Saved");
-        if (Scene_index == 2)
-        {
-            PlayerPrefs.SetInt("islock", 1);
-            PlayerPrefs.Save();
-        }
+        //if (Scene_index == 2)
+        //{
+        //    PlayerPrefs.SetInt("islock", 1);
+        //    PlayerPrefs.Save();
+        //}
 
         PlayerPrefs.SetInt("Saved", Scene_index);
         PlayerPrefs.Save();

@@ -37,6 +37,11 @@ public class EnemyHealths : MonoBehaviour
 
         FindObjectOfType<itemDrop>().DropItems(this.gameObject);
 
+        if(gameObject.name == "Boss")
+        {
+            FindObjectOfType<ShowChest>().DisplayChest();
+        }
+        
         Destroy(gameObject, 0.3f);
     }
 
