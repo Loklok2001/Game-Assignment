@@ -11,6 +11,9 @@ public class PlayerCombat : MonoBehaviour
     public Transform firingPoint;
     public LayerMask enemyLayer;
     public GameObject bullet;
+    public AudioClip attackSound;
+    public AudioClip fireSound;
+    static AudioSource audioSrc;
 
     public int attackDamage = 5;
     public float attackRange = 0.5f;
@@ -21,6 +24,7 @@ public class PlayerCombat : MonoBehaviour
 
     private void Start()
     {
+        audioSrc = GetComponent<AudioSource>();
         ps = gameObject.GetComponent<PlayerController>();
     }
 
@@ -41,6 +45,7 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         animator.SetTrigger("Attack");
+        audioSrc.PlayOneShot(attackSound);
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
 
         foreach (Collider2D enemy in hitEnemies)
@@ -52,6 +57,7 @@ public class PlayerCombat : MonoBehaviour
     void Shoot()
     {
         animator.SetTrigger("Shoot");
+        audioSrc.PlayOneShot(fireSound);
         float angle = ps.isFacingRight ? 0f : 180f;
         Instantiate(bullet, firingPoint.position, Quaternion.Euler(new Vector3(0f, 0f, angle)));
     }

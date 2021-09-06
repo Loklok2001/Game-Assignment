@@ -14,6 +14,7 @@ public class Healths : MonoBehaviour
     public Sprite halfHeart;
     public Sprite emptyHeart;
     public AudioClip hurtSound;
+    public AudioClip deathSound;
     static AudioSource audioSrc;
 
     public GameObject diedUI; 
@@ -74,6 +75,7 @@ public class Healths : MonoBehaviour
     {
         diedUI.gameObject.SetActive(true);
         animator.SetBool("isDead", true);
+        audioSrc.PlayOneShot(deathSound);
         //StartCoroutine(Respawn());
         Debug.Log("Player Die");
     }
