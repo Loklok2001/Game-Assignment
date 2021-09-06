@@ -806,12 +806,16 @@ PrefabInstance:
       value: Influ5
       objectReference: {fileID: 0}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
+      propertyPath: achievements.Array.data[0].goal
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[0].icon
       value: 
       objectReference: {fileID: 21300000, guid: d2d88a977a789654fb9b27d606604f06, type: 3}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[1].goal
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[1].icon
@@ -819,7 +823,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: d2d88a977a789654fb9b27d606604f06, type: 3}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[2].goal
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[2].icon
@@ -827,7 +831,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: d2d88a977a789654fb9b27d606604f06, type: 3}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[3].goal
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[3].icon
@@ -835,7 +839,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: d2d88a977a789654fb9b27d606604f06, type: 3}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[4].goal
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2285985437970019101, guid: f9461f450ded13b4eacb67fa19abb0b7, type: 3}
       propertyPath: achievements.Array.data[4].icon
