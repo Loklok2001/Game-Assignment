@@ -28,7 +28,7 @@ public class EnemyHealths : MonoBehaviour
         {
             EnemyDie();
         }
-
+        
         string name = gameObject.name.Substring(0, 3);
 
         if (name == "Bat")
@@ -49,9 +49,10 @@ public class EnemyHealths : MonoBehaviour
 
         FindObjectOfType<itemDrop>().DropItems(this.gameObject);
 
-        string name = gameObject.name.Substring(0,3);
+        
+        string name = gameObject.name.Substring(0, 3);
 
-        if(name == "Bat")
+        if (name == "Bat")
         {
             FindObjectOfType<Bat_Sound>().Bat_died_sound();
         }
