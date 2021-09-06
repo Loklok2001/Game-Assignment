@@ -10,6 +10,8 @@ public class EnemyHealths : MonoBehaviour
     public int maxHealth;
     public EnemyHealthBar Healthbar;
 
+    string name;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,7 @@ public class EnemyHealths : MonoBehaviour
             EnemyDie();
         }
         
-        string name = gameObject.name.Substring(0, 3);
+        name = gameObject.name.Substring(0, 3);
 
         if (name == "Bat")
         {
@@ -54,7 +56,7 @@ public class EnemyHealths : MonoBehaviour
         FindObjectOfType<itemDrop>().DropItems(this.gameObject);
 
         
-        string name = gameObject.name.Substring(0, 3);
+        name = gameObject.name.Substring(0, 3);
 
         if (name == "Bat")
         {
