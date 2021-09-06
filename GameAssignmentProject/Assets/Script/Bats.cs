@@ -23,10 +23,20 @@ public class Bats : MonoBehaviour
     void Update()
     {
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
+
         if (distanceFromPlayer < lineOfSite && distanceFromPlayer > shootingRange)
+        {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, moveSpeed * Time.deltaTime);
+        }    
         else if (distanceFromPlayer <= shootingRange && nextFireTime < Time.time)
         {
+            string name = gameObject.name.Substring(0, 3);
+
+            if (name == "Bat")
+            {
+                FindObjectOfType<Bat_Sound>().Bat_hit_sound();
+            }
+
             Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
             nextFireTime = Time.time + fireRate;
         }

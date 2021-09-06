@@ -17,7 +17,6 @@ public class BatBullet : MonoBehaviour
         Vector2 moveDir = (target.transform.position - transform.position).normalized * bulletSpeed;
         bulletRB.velocity = new Vector2(moveDir.x, moveDir.y);
         Destroy(this.gameObject, 2);
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -29,4 +28,3 @@ public class BatBullet : MonoBehaviour
         }
     }
 }
-

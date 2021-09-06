@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4598322187226940139}
-  - component: {fileID: 3600023620820276171}
   - component: {fileID: 8371861228884323106}
+  - component: {fileID: 3600023620820276171}
   m_Layer: 7
   m_Name: Sound
   m_TagString: Untagged
@@ -32,6 +32,21 @@ Transform:
   m_Father: {fileID: 4491668384755050739}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8371861228884323106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080126381063722292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1002f02e8c865b342a901bf0e1f6d1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bat_hited: {fileID: 8300000, guid: e2fce1b9734d54f4db6213bf7fde41ca, type: 3}
+  bat_Die: {fileID: 8300000, guid: f2c52b92036dabb41b995452a502f075, type: 3}
+  bat_hit: {fileID: 8300000, guid: e3adfdeb53d496944936073fcd6e3b3e, type: 3}
 --- !u!82 &3600023620820276171
 AudioSource:
   m_ObjectHideFlags: 0
@@ -42,18 +57,18 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dac9096dd3c43ad4c9fe8d974f5a8b37, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0.85
   MinDistance: 0
-  MaxDistance: 100
+  MaxDistance: 10
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -88,7 +103,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -128,19 +143,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8371861228884323106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080126381063722292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1002f02e8c865b342a901bf0e1f6d1ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bat_Die: {fileID: 8300000, guid: f2c52b92036dabb41b995452a502f075, type: 3}
 --- !u!1 &2825536867777333933
 GameObject:
   m_ObjectHideFlags: 0
