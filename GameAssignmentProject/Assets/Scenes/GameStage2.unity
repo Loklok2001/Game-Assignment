@@ -17184,6 +17184,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss_Root
       objectReference: {fileID: 0}
+    - target: {fileID: 4771791886912185187, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
 --- !u!1 &962610047
@@ -18300,7 +18304,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5395f50dacd7b674dab334fa3c43c3c1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 06307622791c7a645a18f44a6bc87452, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
