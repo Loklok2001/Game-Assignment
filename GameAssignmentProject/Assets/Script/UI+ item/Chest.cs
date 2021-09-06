@@ -54,6 +54,7 @@ public class Chest : MonoBehaviour
     {
         isOpen = true;
         spriteRenderer.sprite = openSprite;
+        FindObjectOfType<Chest_Sound>().Chest_open_sound();
         chest_UI.SetActive(isOpen);
     }
 
@@ -61,6 +62,7 @@ public class Chest : MonoBehaviour
     {
         isOpen = false;
         spriteRenderer.sprite = closedSprite;
+        FindObjectOfType<Chest_Sound>().Chest_close_sound();
         chest_UI.SetActive(isOpen);
     }
 
