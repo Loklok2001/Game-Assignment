@@ -21,10 +21,17 @@ public class ClickBtn : MonoBehaviour
             AchievementManager.achievementManagerInstance.AddAchievementProgress("Rabies2", 1);
             AchievementManager.achievementManagerInstance.AddAchievementProgress("Rabies3", 1);
             AchievementManager.achievementManagerInstance.AddAchievementProgress("Rabies4", 1);
+            AchievementManager.achievementManagerInstance.AddAchievementProgress("Rabies5", 1);
+            AchievementManager.achievementManagerInstance.AddAchievementProgress("Influ1", 1);
+            AchievementManager.achievementManagerInstance.AddAchievementProgress("Influ2", 1);
+            AchievementManager.achievementManagerInstance.AddAchievementProgress("Influ3", 1);
+            AchievementManager.achievementManagerInstance.AddAchievementProgress("Influ4", 1);
+            AchievementManager.achievementManagerInstance.AddAchievementProgress("Influ5", 1);
+
 
         }
 
-        if(clicks >= 15)
+        if (clicks >= 15)
         {
             teleportPointShow.gameObject.SetActive(true);
         }
