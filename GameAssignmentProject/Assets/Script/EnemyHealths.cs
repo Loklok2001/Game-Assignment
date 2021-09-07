@@ -44,7 +44,7 @@ public class EnemyHealths : MonoBehaviour
         {
             FindObjectOfType<Wolf_Sound>().Wolf_hited_sound();
         }
-        else if (gameObject.name.Substring(0, 3) == "Boss")
+        else if (gameObject.name.Substring(0, 3) == "Bos")
         {
             FindObjectOfType<Boss_Sound>().Boss_hited_sound();
         }
