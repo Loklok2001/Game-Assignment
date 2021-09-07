@@ -40401,6 +40401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 2
       objectReference: {fileID: 0}
+    - target: {fileID: 84999383707605873, guid: e328d70e6330ee64fbbfa9453f060c41, type: 3}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1825a5d907b81d24896126e0c7060cb2, type: 3}
     - target: {fileID: 84999383707605878, guid: e328d70e6330ee64fbbfa9453f060c41, type: 3}
       propertyPath: text_quantity
       value: 
