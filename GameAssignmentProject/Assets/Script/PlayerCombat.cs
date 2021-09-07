@@ -13,6 +13,7 @@ public class PlayerCombat : MonoBehaviour
     public GameObject bullet;
     public AudioClip attackSound;
     public AudioClip fireSound;
+    public bool attack = false;
     static AudioSource audioSrc;
 
     public int attackDamage = 5;
@@ -33,6 +34,7 @@ public class PlayerCombat : MonoBehaviour
         if (Input.GetButtonDown("Attack") && Time.time >= nextAttackTime && !PauseMenu.GameIsPause)
         {
             Attack();
+            attack = true;
             nextAttackTime = Time.time + 1f / attackrate;
         }
         if (Input.GetButtonDown("Fire") && Time.time > timeUntilFire && !PauseMenu.GameIsPause)
@@ -46,11 +48,20 @@ public class PlayerCombat : MonoBehaviour
     {
         animator.SetTrigger("Attack");
         audioSrc.PlayOneShot(attackSound);
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
+        //Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
 
-        foreach (Collider2D enemy in hitEnemies)
+        //foreach (Collider2D enemy in hitEnemies)
+        //{
+        //    enemy.GetComponent<EnemyHealths>().TakeDamage(attackDamage);
+        //}
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            enemy.GetComponent<EnemyHealths>().TakeDamage(attackDamage);
+            collision.gameObject.GetComponent<EnemyHealths>().TakeDamage(attackDamage);
         }
     }
 

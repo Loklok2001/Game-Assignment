@@ -1132,6 +1132,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77960123}
   m_CullTransparentMesh: 1
+--- !u!1 &81442244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 828997786234078954, guid: d4b1f577554e1f443942cc58c0e38a4b, type: 3}
+  m_PrefabInstance: {fileID: 4190233704663786244}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &81442246
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81442244}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.16032028, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.6603203
 --- !u!1 &82231009
 GameObject:
   m_ObjectHideFlags: 0
@@ -61743,11 +61764,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 828997787667150515, guid: d4b1f577554e1f443942cc58c0e38a4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -86.76
+      value: -81.66
       objectReference: {fileID: 0}
     - target: {fileID: 828997787667150515, guid: d4b1f577554e1f443942cc58c0e38a4b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.82
+      value: -3.8
       objectReference: {fileID: 0}
     - target: {fileID: 828997787667150515, guid: d4b1f577554e1f443942cc58c0e38a4b, type: 3}
       propertyPath: m_LocalPosition.z
