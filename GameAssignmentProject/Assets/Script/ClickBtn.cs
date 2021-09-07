@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ClickBtn : MonoBehaviour
 {
     public GameObject teleportPointShow;
+    public GameObject vaccine;
     public Text clickDisplay;
     public int clicks;
 
@@ -22,7 +23,11 @@ public class ClickBtn : MonoBehaviour
             AchievementManager.achievementManagerInstance.AddAchievementProgress("Rabies3", 1);
             AchievementManager.achievementManagerInstance.AddAchievementProgress("Rabies4", 1);
             AchievementManager.achievementManagerInstance.AddAchievementProgress("Rabies5", 1);
-           
+
+            if (clicks%5 == 0)
+            {
+                FindObjectOfType<InventorySystem>().PickUp(vaccine);
+            }
         }
         if (clicks >= 15)
         {

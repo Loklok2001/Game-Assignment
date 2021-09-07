@@ -8,15 +8,25 @@ public class InteractionSystemr : MonoBehaviour
     public Transform detactionPoint;
     private const float detactionRadius = 0.2f;
     public LayerMask detectionLayer;
+    public LayerMask detectionLayer2;
 
     // Update is called once per frame
     void Update()
     {
+        if (DetactNPC())
+        {
+            Debug.Log("a");
+            if (InteractInput())
+            {
+                Debug.Log("b");
+                FindObjectOfType<OpenNPCUI>().UpdateNPC();
+            }
+        }
+
         if (DetactChest())
         {
             if (openInput())
             {
-                Debug.Log("halo");
                 FindObjectOfType<Chest>().updateChest();
             }
         }
@@ -31,4 +41,16 @@ public class InteractionSystemr : MonoBehaviour
     {
         return Physics2D.OverlapCircle(detactionPoint.position, detactionRadius, detectionLayer);
     }
+
+    bool InteractInput()
+    {
+        return Input.GetKeyDown(KeyCode.N);
+    }
+
+    bool DetactNPC()
+    {
+        return Physics2D.OverlapCircle(detactionPoint.position, detactionRadius, detectionLayer2);
+    }
+
+
 }

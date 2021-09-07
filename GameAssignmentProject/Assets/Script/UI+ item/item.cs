@@ -9,7 +9,8 @@ public class item : MonoBehaviour
         potion,
         paper,
         bullet,
-        enxyclopedia
+        enxyclopedia,
+        vaccine
     }
 
     public ItemType itemtype;
@@ -38,6 +39,7 @@ public class item : MonoBehaviour
             default:
             case ItemType.potion:
             case ItemType.paper:
+            case ItemType.vaccine:
                 return true;
             case ItemType.enxyclopedia:
                 return false;
@@ -53,6 +55,7 @@ public class item : MonoBehaviour
             case ItemType.enxyclopedia:
             case ItemType.potion:
             case ItemType.paper:
+            case ItemType.vaccine:
                 return false;
         }
     }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NPCHealth : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class NPCHealth : MonoBehaviour
         {
             animator.SetBool("Dead", true);
             Destroy(Healthbar.gameObject);
+            SceneManager.LoadScene("GameOver");
             this.enabled = false;
         }
     }

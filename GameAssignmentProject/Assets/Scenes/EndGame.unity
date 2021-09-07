@@ -686,7 +686,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1951051099}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
         m_MethodName: goBackMainMenu
         m_Mode: 1
@@ -745,7 +745,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1951051100}
-  - component: {fileID: 1951051099}
   - component: {fileID: 1951051101}
   m_Layer: 0
   m_Name: EndGamerSetting
@@ -754,18 +753,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1951051099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951051098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69bdfb8daac039b43bbcee7467adb17b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1951051100
 Transform:
   m_ObjectHideFlags: 0
@@ -790,7 +777,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5a668d66974a5c2448ab05afca6a5a16, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
