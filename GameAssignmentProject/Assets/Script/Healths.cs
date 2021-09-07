@@ -14,6 +14,8 @@ public class Healths : MonoBehaviour
     public Sprite halfHeart;
     public Sprite emptyHeart;
     public AudioClip hurtSound;
+    public AudioClip deathSound;
+    public AudioClip potionSound;
     static AudioSource audioSrc;
 
     public GameObject diedUI; 
@@ -74,6 +76,7 @@ public class Healths : MonoBehaviour
     {
         diedUI.gameObject.SetActive(true);
         animator.SetBool("isDead", true);
+        audioSrc.PlayOneShot(deathSound);
         //StartCoroutine(Respawn());
         Debug.Log("Player Die");
     }
@@ -89,6 +92,7 @@ public class Healths : MonoBehaviour
     public void heal()
     {
         health += 4;
+        audioSrc.PlayOneShot(potionSound);
         if (health > maxHealth)
         {
             health = maxHealth;

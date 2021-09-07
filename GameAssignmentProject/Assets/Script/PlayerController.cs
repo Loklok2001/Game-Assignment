@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
-
     public Animator animator;
     private Rigidbody2D rb;
     public Collider2D standingCollider;
@@ -13,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public Transform Ceiling;
     public Transform Grounds;
     public LayerMask Layer;
+    public AudioClip jumpSound;
+    static AudioSource audioSrc;
 
     const float Radius = 0.2f;
     public float moveSpeed = 1;
@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        audioSrc = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -102,6 +103,7 @@ public class PlayerController : MonoBehaviour
     {
         if (isGround || jumpCount < extraJumps)
         {
+            audioSrc.PlayOneShot(jumpSound);
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jumpCount++;
         }
