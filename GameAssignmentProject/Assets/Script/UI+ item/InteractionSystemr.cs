@@ -50,5 +50,4 @@ public class InteractionSystemr : MonoBehaviour
         return Physics2D.OverlapCircle(detactionPoint.position, detactionRadius, detectionLayer2);
     }
 
-
 }

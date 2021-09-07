@@ -243,9 +243,10 @@ public class InventorySystem : MonoBehaviour
         }
     }
 
-    public void usevaccine(int used)
+    public bool usevaccine(int used)
     {
         int id = -1;
+        bool results = false;
 
         for (int i = 0; i < items.Count; i++)
         {
@@ -257,6 +258,7 @@ public class InventorySystem : MonoBehaviour
 
         if (id != -1)
         {
+            results = true;
             items[id].obj.GetComponent<item>().consume(items[id].obj.tag);
 
             items[id].stack -= used;
@@ -272,5 +274,6 @@ public class InventorySystem : MonoBehaviour
             }
             Update_Inventory();
         }
+        return results;
     }
 }

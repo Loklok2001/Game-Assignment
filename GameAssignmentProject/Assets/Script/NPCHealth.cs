@@ -7,16 +7,19 @@ public class NPCHealth : MonoBehaviour
 {
 
     public Animator animator;
+    public EnemyHealthBar Healthbar;
+    public Collider2D interactCollider;
 
     private int currentHealth;
     private int maxHealth = 150;
-    public EnemyHealthBar Healthbar;
     private float timer = 2;
     private float times;
+    bool counter;
 
     // Start is called before the first frame update
     void Start()
     {
+        counter = false;
         currentHealth = maxHealth;
         times = timer;
         Healthbar.SetHealth(currentHealth, maxHealth);
@@ -25,19 +28,27 @@ public class NPCHealth : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (times < 0)
+        if (!counter)
         {
-            currentHealth -= 1;
-            Healthbar.SetHealth(currentHealth, maxHealth);
-            times = timer;
+            if (times < 0)
+            {
+                currentHealth -= 1;
+                Healthbar.SetHealth(currentHealth, maxHealth);
+                times = timer;
+            }
+            else
+                times -= Time.deltaTime;
+            if (currentHealth < 0)
+            {
+                animator.SetBool("Dead", true);
+                Destroy(Healthbar.gameObject);
+                //SceneManager.LoadScene("GameOver");
+                this.enabled = false;
+            }
         }
-        else
-            times -= Time.deltaTime;
-        if(currentHealth < 0)
-        {
-            animator.SetBool("Dead", true);
+        else {
             Destroy(Healthbar.gameObject);
-            SceneManager.LoadScene("GameOver");
+            interactCollider.enabled = false;
             this.enabled = false;
         }
     }
@@ -45,5 +56,10 @@ public class NPCHealth : MonoBehaviour
     public int getHealth()
     {
         return currentHealth;
+    }
+
+    public void stopcounter()
+    {
+        counter = true;
     }
 }

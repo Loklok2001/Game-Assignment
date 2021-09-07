@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class OpenNPCUI : MonoBehaviour
 {
+    public Transform detactionPoint;
+    private const float detactionRadius = 0.2f;
+    public LayerMask detectionLayer;
     public GameObject npc_window;
     bool isOpen = false;
 
@@ -26,8 +29,11 @@ public class OpenNPCUI : MonoBehaviour
 
     public void clickButton()
     {
-        FindObjectOfType<InventorySystem>().usevaccine(1);
-
-
+        if (FindObjectOfType<InventorySystem>().usevaccine(1))
+        {
+            Physics2D.OverlapCircle(detactionPoint.position, detactionRadius, detectionLayer).GetComponent<NPCHealth>().stopcounter();
+            npc_window.SetActive(false);
+        }
     }
 }
+
