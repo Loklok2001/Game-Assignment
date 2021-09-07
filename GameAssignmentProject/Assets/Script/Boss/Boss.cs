@@ -20,7 +20,7 @@ public class Boss : MonoBehaviour
     public EnemyHealths health;
     public BossStage2 stageScript;
     public AudioClip bossJump;
-    static AudioSource audioSrc;
+    public AudioSource audioSrc;
     #endregion
 
     #region Private

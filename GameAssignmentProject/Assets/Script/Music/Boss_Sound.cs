@@ -6,7 +6,7 @@ public class Boss_Sound : MonoBehaviour
 {
     public AudioClip bossHit;
     public AudioClip bossDie;
-    static AudioSource audioSrc;
+    public AudioSource audioSrc;
 
     void Start()
     {
