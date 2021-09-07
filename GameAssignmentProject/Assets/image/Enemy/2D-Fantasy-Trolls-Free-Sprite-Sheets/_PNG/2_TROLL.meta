@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 8b75ba453373c1e4e84aa73d9880a8b3
+=======
+<<<<<<< HEAD:GameAssignmentProject/Assets/image/Enemy/2D-Fantasy-Trolls-Free-Sprite-Sheets/_PNG/2_TROLL/ATTAK.meta
+guid: 9c4d2d94fc83be14c9462dd95ddd4012
+=======
 guid: c48e83bb2d0a6664485d1d83e7f9cd7f
+>>>>>>> 573ec3514deee91cb959a396813e0cca24ba88ff:GameAssignmentProject/Assets/image/Enemy/2D-Fantasy-Trolls-Free-Sprite-Sheets/_PNG/2_TROLL.meta
+>>>>>>> 573ec3514deee91cb959a396813e0cca24ba88ff
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
