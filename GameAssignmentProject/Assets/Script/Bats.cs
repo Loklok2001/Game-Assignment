@@ -30,13 +30,6 @@ public class Bats : MonoBehaviour
         }    
         else if (distanceFromPlayer <= shootingRange && nextFireTime < Time.time)
         {
-            string name = gameObject.name.Substring(0, 3);
-
-            if (name == "Bat")
-            {
-                FindObjectOfType<Bat_Sound>().Bat_hit_sound();
-            }
-
             Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
             nextFireTime = Time.time + fireRate;
         }

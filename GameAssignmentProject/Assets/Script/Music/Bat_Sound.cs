@@ -21,6 +21,7 @@ public class Bat_Sound : MonoBehaviour
 
     public void Bat_hited_sound()
     {
+        Debug.Log("aa");
         audioSrc.PlayOneShot(bat_hited);
     }
 
