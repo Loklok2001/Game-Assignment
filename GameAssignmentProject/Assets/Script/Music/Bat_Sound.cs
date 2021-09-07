@@ -7,7 +7,7 @@ public class Bat_Sound : MonoBehaviour
     public AudioClip bat_hited;
     public AudioClip bat_Die;
     public AudioClip bat_hit;
-    static AudioSource audioSrc;
+    public AudioSource audioSrc;
 
     void Start()
     {

@@ -6,7 +6,7 @@ public class Zombie_Sound : MonoBehaviour
 {
     public AudioClip zombie_hited;
     public AudioClip zombie_Die;
-    static AudioSource audioSrc;
+    public AudioSource audioSrc;
 
     void Start()
     {

@@ -6,7 +6,7 @@ public class Wolf_Sound : MonoBehaviour
 {
     public AudioClip wolf_hited;
     public AudioClip wolf_Die;
-    static AudioSource audioSrc;
+    public AudioSource audioSrc;
 
     void Start()
     {

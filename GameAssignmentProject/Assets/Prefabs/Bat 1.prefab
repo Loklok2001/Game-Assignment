@@ -47,6 +47,7 @@ MonoBehaviour:
   bat_hited: {fileID: 8300000, guid: e2fce1b9734d54f4db6213bf7fde41ca, type: 3}
   bat_Die: {fileID: 8300000, guid: f2c52b92036dabb41b995452a502f075, type: 3}
   bat_hit: {fileID: 8300000, guid: e3adfdeb53d496944936073fcd6e3b3e, type: 3}
+  audioSrc: {fileID: 3600023620820276171}
 --- !u!82 &3600023620820276171
 AudioSource:
   m_ObjectHideFlags: 0

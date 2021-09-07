@@ -719,6 +719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombie_hited: {fileID: 8300000, guid: 13278f920c390b548985b4157e5efcf7, type: 3}
   zombie_Die: {fileID: 8300000, guid: 6f9063d8714844f4abb077fe593e4563, type: 3}
+  audioSrc: {fileID: 3091773596047008084}
 --- !u!82 &3091773596047008084
 AudioSource:
   m_ObjectHideFlags: 0
