@@ -14,7 +14,7 @@ public class BossStage2 : MonoBehaviour
     public GameObject hotzone;
     public GameObject triggerArea;
     public AudioClip bossAttack;
-    static AudioSource audioSrc;
+    public AudioSource audioSrc;
 
     private Animator animator;
     private float distance;
