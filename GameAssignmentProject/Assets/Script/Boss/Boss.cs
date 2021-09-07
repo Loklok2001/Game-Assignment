@@ -19,6 +19,8 @@ public class Boss : MonoBehaviour
     public Animator animator;
     public EnemyHealths health;
     public BossStage2 stageScript;
+    public AudioClip bossJump;
+    static AudioSource audioSrc;
     #endregion
 
     #region Private
@@ -36,6 +38,7 @@ public class Boss : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioSrc = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -82,11 +85,13 @@ public class Boss : MonoBehaviour
 
     void JumpAttack()
     {
-            float distanceFromPlayer = player.position.x - transform.position.x;
-            if (isGrounded)
-            {
-                rb.AddForce(new Vector2(distanceFromPlayer, jumpHeight), ForceMode2D.Impulse);
-            }
+        float distanceFromPlayer = player.position.x - transform.position.x;
+        audioSrc.PlayOneShot(bossJump);
+
+        if (isGrounded)
+        {
+            rb.AddForce(new Vector2(distanceFromPlayer, jumpHeight), ForceMode2D.Impulse);
+        }
     }
 
     void FlipTowardsPlayer()

@@ -13,6 +13,8 @@ public class BossStage2 : MonoBehaviour
     public bool inRange;
     public GameObject hotzone;
     public GameObject triggerArea;
+    public AudioClip bossAttack;
+    static AudioSource audioSrc;
 
     private Animator animator;
     private float distance;
@@ -24,6 +26,7 @@ public class BossStage2 : MonoBehaviour
     {
         animator.SetBool("stage2", true);
         animator.SetBool("canSeePlayer", false);
+        audioSrc = GetComponent<AudioSource>();
     }
 
     private void Awake()
@@ -89,6 +92,7 @@ public class BossStage2 : MonoBehaviour
     {
         timer = intTimer;
         attackMode = true;
+        audioSrc.PlayOneShot(bossAttack);
 
         animator.SetBool("canWalk", false);
         animator.SetBool("Attack", true);

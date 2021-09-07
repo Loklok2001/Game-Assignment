@@ -45,6 +45,10 @@ public class EnemyHealths : MonoBehaviour
         {
             FindObjectOfType<Wolf_Sound>().Wolf_hited_sound();
         }
+        else if (name == "Boss")
+        {
+            FindObjectOfType<Boss_Sound>().Boss_hited_sound();
+        }
     }
 
     public void EnemyDie()
@@ -69,6 +73,10 @@ public class EnemyHealths : MonoBehaviour
         else if (name == "Wol")
         {
             FindObjectOfType<Wolf_Sound>().Wolf_died_sound();
+        }
+        else if (name == "Boss")
+        {
+            FindObjectOfType<Boss_Sound>().Boss_died_sound();
         }
 
         if (gameObject.name == "Boss")
