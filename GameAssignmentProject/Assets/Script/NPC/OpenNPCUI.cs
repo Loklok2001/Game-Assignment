@@ -23,4 +23,11 @@ public class OpenNPCUI : MonoBehaviour
         isOpen = false;
         npc_window.SetActive(isOpen);
     }
+
+    public void clickButton()
+    {
+        FindObjectOfType<InventorySystem>().usevaccine(1);
+
+
+    }
 }

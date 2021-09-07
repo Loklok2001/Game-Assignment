@@ -15,10 +15,8 @@ public class InteractionSystemr : MonoBehaviour
     {
         if (DetactNPC())
         {
-            Debug.Log("a");
             if (InteractInput())
             {
-                Debug.Log("b");
                 FindObjectOfType<OpenNPCUI>().UpdateNPC();
             }
         }

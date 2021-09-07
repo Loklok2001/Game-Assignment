@@ -242,4 +242,35 @@ public class InventorySystem : MonoBehaviour
             Update_Inventory();
         }
     }
+
+    public void usevaccine(int used)
+    {
+        int id = -1;
+
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (items[i].obj.tag == "Vaccine")
+            {
+                id = i;
+            }
+        }
+
+        if (id != -1)
+        {
+            items[id].obj.GetComponent<item>().consume(items[id].obj.tag);
+
+            items[id].stack -= used;
+            sampleQuantity = items[id].stack;
+
+            if (items[id].stack == 0)
+            {
+                if (items[id].obj.tag != "Vaccine")
+                {
+                    Destroy(items[id].obj, 0.1f);
+                }
+                items.RemoveAt(id);
+            }
+            Update_Inventory();
+        }
+    }
 }
