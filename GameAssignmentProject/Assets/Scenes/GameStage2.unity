@@ -742,7 +742,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 544278614}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
         m_MethodName: buyItem
         m_Mode: 1
@@ -933,7 +933,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: ShowDescription
           m_Mode: 3
@@ -949,7 +949,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: HideDescription
           m_Mode: 1
@@ -965,7 +965,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: useitem
           m_Mode: 3
@@ -11437,7 +11437,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: ShowDescription
           m_Mode: 3
@@ -11453,7 +11453,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: HideDescription
           m_Mode: 1
@@ -11469,7 +11469,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: useitem
           m_Mode: 3
@@ -12977,7 +12977,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: ShowDescription
           m_Mode: 3
@@ -12993,7 +12993,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: HideDescription
           m_Mode: 1
@@ -13009,7 +13009,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: useitem
           m_Mode: 3
@@ -13130,7 +13130,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 544278615}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
         m_MethodName: ToggleInventory
         m_Mode: 1
@@ -14427,6 +14427,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8107074637146891224, guid: f9f2949400f915446ba5f95f01fead9f, type: 3}
   m_PrefabInstance: {fileID: 1582702385}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 --- !u!114 &544278614 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5363932213389731921, guid: e88b57013bbc439429b4a9d6cd2b2d18, type: 3}
@@ -14465,6 +14466,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7343ba1476a510642848f83cdc333686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> Stashed changes
 --- !u!1 &557630524
 GameObject:
   m_ObjectHideFlags: 0
@@ -14561,7 +14564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc99be2fe58c8f44b88a9f4c7f9c101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 544278616}
+  player: {fileID: 0}
   xWidthC: 87
   yHeightC: 10
 --- !u!1 &561838479
@@ -15246,7 +15249,7 @@ Transform:
   m_LocalScale: {x: 15.126103, y: 3.130091, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &654848661
 SpriteRenderer:
@@ -15444,7 +15447,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &666675021
 MonoBehaviour:
@@ -16132,7 +16135,7 @@ Transform:
   - {fileID: 336512242}
   - {fileID: 884091213}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &770690721
 GameObject:
@@ -16209,148 +16212,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770690721}
   m_CullTransparentMesh: 1
---- !u!1 &771833592
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 771833593}
-  - component: {fileID: 771833595}
-  - component: {fileID: 771833594}
-  m_Layer: 0
-  m_Name: Sound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &771833593
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 771833592}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1874842326}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &771833594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 771833592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10768cd5cbf8d3849a06b055ef45756b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bossHit: {fileID: 8300000, guid: 337d101c715f3974a9ee76b3651c9d36, type: 3}
-  bossDie: {fileID: 8300000, guid: 337d101c715f3974a9ee76b3651c9d36, type: 3}
---- !u!82 &771833595
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 771833592}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 20
-  Pan2D: 0
-  rolloffMode: 1
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &778428915
 GameObject:
   m_ObjectHideFlags: 0
@@ -16834,7 +16695,7 @@ Transform:
   - {fileID: 1287860070}
   - {fileID: 1652842193}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &908324132
 GameObject:
@@ -17416,15 +17277,7 @@ PrefabInstance:
     - target: {fileID: 4771791885391441564, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 544278616}
-    - target: {fileID: 4771791885391441564, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
-      propertyPath: bossJump
-      value: 
-      objectReference: {fileID: 8300000, guid: 9a07d7bfccbe0b344b6a1a4a426c245b, type: 3}
-    - target: {fileID: 4771791885391441564, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
-      propertyPath: bossAttack
-      value: 
-      objectReference: {fileID: 8300000, guid: 9a07d7bfccbe0b344b6a1a4a426c245b, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 4771791885391441565, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.35
@@ -17456,11 +17309,7 @@ PrefabInstance:
     - target: {fileID: 4771791885391441566, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 544278616}
-    - target: {fileID: 4771791885391441566, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
-      propertyPath: bossAttack
-      value: 
-      objectReference: {fileID: 8300000, guid: 9a07d7bfccbe0b344b6a1a4a426c245b, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 4771791885605189438, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.540001
@@ -18007,102 +17856,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemModel: {fileID: 4629820745931257477, guid: 6171ca1863760944ba9fd7e60e805d07, type: 3}
   enemydie: {fileID: 1000264927}
---- !u!82 &1000264936
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000264926}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1003864360
 GameObject:
   m_ObjectHideFlags: 0
@@ -18653,7 +18406,7 @@ Transform:
   - {fileID: 634405680}
   - {fileID: 540760904}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1107447908
 GameObject:
@@ -18891,7 +18644,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 544278614}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
         m_MethodName: CloseInvalidUI
         m_Mode: 1
@@ -20480,7 +20233,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: ShowDescription
           m_Mode: 3
@@ -20496,7 +20249,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: HideDescription
           m_Mode: 1
@@ -20512,7 +20265,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: useitem
           m_Mode: 3
@@ -23749,7 +23502,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: ShowDescription
           m_Mode: 3
@@ -23765,7 +23518,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: HideDescription
           m_Mode: 1
@@ -23781,7 +23534,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: useitem
           m_Mode: 3
@@ -34796,7 +34549,7 @@ Transform:
   - {fileID: 1272435672}
   - {fileID: 1430024906}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1503321558
 GameObject:
@@ -35185,7 +34938,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1543012087
 PrefabInstance:
@@ -35751,7 +35504,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1624648953
 GameObject:
@@ -37012,7 +36765,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 544278618}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Healths, Assembly-CSharp
         m_MethodName: Respawn
         m_Mode: 1
@@ -37974,7 +37727,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: ShowDescription
           m_Mode: 3
@@ -37990,7 +37743,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: HideDescription
           m_Mode: 1
@@ -38006,7 +37759,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 544278615}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
           m_MethodName: useitem
           m_Mode: 3
@@ -38162,7 +37915,7 @@ Transform:
   - {fileID: 417775763}
   - {fileID: 1144199389}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1848631260
 MonoBehaviour:
@@ -38344,11 +38097,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &1874842326 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4771791886912185186, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
-  m_PrefabInstance: {fileID: 953127900}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1894420439
 GameObject:
   m_ObjectHideFlags: 0
@@ -40645,6 +40393,7 @@ RectTransform:
   m_AnchoredPosition: {x: 49.99997, y: -27.000013}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
 --- !u!1001 &5363932213923520519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40826,3 +40575,5 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e88b57013bbc439429b4a9d6cd2b2d18, type: 3}
+=======
+>>>>>>> Stashed changes
