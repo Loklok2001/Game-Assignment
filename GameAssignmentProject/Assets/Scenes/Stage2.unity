@@ -17490,6 +17490,30 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4771791885711420363, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771791885711420363, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771791886150366867, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -0.0000076294
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771791886150366867, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771791886150366867, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771791886150366867, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00000023841858
+      objectReference: {fileID: 0}
     - target: {fileID: 4771791886766273080, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.35
@@ -22492,7 +22516,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 131534855
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -6834524911116659543, guid: 5f78370dfd380b14e864d0664f42b73a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
