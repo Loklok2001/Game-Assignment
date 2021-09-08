@@ -10,7 +10,7 @@ public class NPCHealth : MonoBehaviour
     public Collider2D interactCollider;
 
     private int currentHealth;
-    private int maxHealth = 10;
+    private int maxHealth = 150;
     private float timer = 2;
     private float times;
     bool counter;

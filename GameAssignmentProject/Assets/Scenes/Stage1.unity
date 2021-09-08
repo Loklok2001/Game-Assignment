@@ -29375,7 +29375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e1de166c00d694db16a7c496507d7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextStage: CompleteChapter1
+  nextStage: ComleteChapter1
 --- !u!61 &928506370
 BoxCollider2D:
   m_ObjectHideFlags: 0
