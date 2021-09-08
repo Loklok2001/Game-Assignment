@@ -10405,7 +10405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &204925281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22763,7 +22763,7 @@ MonoBehaviour:
   - obj: {fileID: 2564077522092273608, guid: ffb675a880696c94383d2f38b9225b11, type: 3}
     stack: 3
   - obj: {fileID: 4629820745931257477, guid: 6171ca1863760944ba9fd7e60e805d07, type: 3}
-    stack: 4
+    stack: 15
   chest_UI: {fileID: 2030452585}
   items_images:
   - {fileID: 671592941}

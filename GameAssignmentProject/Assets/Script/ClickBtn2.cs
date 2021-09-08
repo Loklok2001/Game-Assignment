@@ -29,7 +29,10 @@ public class ClickBtn2 : MonoBehaviour
                 FindObjectOfType<InventorySystem>().PickUp(vaccine);
             }
         }
+        if (clicks >= 15)
+        {
+            teleportPointShow.gameObject.SetActive(true);
+        }
 
-      
     }
 }
