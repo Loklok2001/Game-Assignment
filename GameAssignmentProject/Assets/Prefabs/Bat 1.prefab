@@ -339,6 +339,7 @@ GameObject:
   - component: {fileID: 4491668384755050743}
   - component: {fileID: 4491668384755050742}
   - component: {fileID: 5319740542491008406}
+  - component: {fileID: 4901784825562248279}
   m_Layer: 7
   m_Name: Bat 1
   m_TagString: Enemy
@@ -496,6 +497,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemModel: {fileID: 4629820745931257477, guid: 6171ca1863760944ba9fd7e60e805d07, type: 3}
   enemydie: {fileID: 4491668384755050739}
+--- !u!50 &4901784825562248279
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4491668384755050741}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &6763121935735471811
 GameObject:
   m_ObjectHideFlags: 0
