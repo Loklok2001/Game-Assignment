@@ -23180,7 +23180,7 @@ MonoBehaviour:
   closedSprite: {fileID: -6834524911116659543, guid: 5f78370dfd380b14e864d0664f42b73a, type: 3}
   items:
   - obj: {fileID: 2564077522092273608, guid: ffb675a880696c94383d2f38b9225b11, type: 3}
-    stack: 3
+    stack: 5
   - obj: {fileID: 4629820745931257477, guid: 6171ca1863760944ba9fd7e60e805d07, type: 3}
     stack: 15
   chest_UI: {fileID: 2030452585}
