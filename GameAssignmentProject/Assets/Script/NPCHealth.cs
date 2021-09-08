@@ -5,16 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class NPCHealth : MonoBehaviour
 {
-
     public Animator animator;
     public EnemyHealthBar Healthbar;
     public Collider2D interactCollider;
 
     private int currentHealth;
-    private int maxHealth = 150;
+    private int maxHealth = 10;
     private float timer = 2;
     private float times;
     bool counter;
+    static int star;
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +42,11 @@ public class NPCHealth : MonoBehaviour
             {
                 animator.SetBool("Dead", true);
                 Destroy(Healthbar.gameObject);
-                //SceneManager.LoadScene("GameOver");
+                if(star == 0)
+                {
+                    SceneManager.LoadScene("GameOver");
+                }
+                interactCollider.enabled = false;
                 this.enabled = false;
             }
         }
@@ -60,6 +64,7 @@ public class NPCHealth : MonoBehaviour
 
     public void stopcounter()
     {
+        star = 1;
         counter = true;
     }
 }

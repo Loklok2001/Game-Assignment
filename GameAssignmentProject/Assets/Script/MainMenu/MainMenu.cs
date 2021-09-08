@@ -61,6 +61,13 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync(0);
     }
 
+    public void Save()
+    {
+        Scene_index = SceneManager.GetActiveScene().buildIndex;
+        PlayerPrefs.SetInt("Saved", Scene_index);
+        PlayerPrefs.Save();
+    }
+
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
