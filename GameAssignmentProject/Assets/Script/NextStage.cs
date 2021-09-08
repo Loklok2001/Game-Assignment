@@ -15,4 +15,9 @@ public class NextStage : MonoBehaviour
             SceneManager.LoadScene(nextStage);
         }
     }
+
+    public void nextstage()
+    {
+        SceneManager.LoadScene(nextStage);
+    }
 }

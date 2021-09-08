@@ -14,7 +14,7 @@ public class NPCHealth : MonoBehaviour
     private float timer = 2;
     private float times;
     bool counter;
-    static int star;
+    public static int star;
 
     // Start is called before the first frame update
     void Start()
@@ -64,7 +64,7 @@ public class NPCHealth : MonoBehaviour
 
     public void stopcounter()
     {
-        star = 1;
+        star += 1;
         counter = true;
     }
 }
