@@ -92,7 +92,7 @@ public class BossStage2 : MonoBehaviour
     {
         timer = intTimer;
         attackMode = true;
-        audioSrc.PlayOneShot(bossAttack);
+        audioSrc.PlayOneShot(bossAttack, 0.1f);
 
         animator.SetBool("canWalk", false);
         animator.SetBool("Attack", true);
