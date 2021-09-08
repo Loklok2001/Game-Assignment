@@ -23440,6 +23440,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -10, y: -10}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1309013757 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5363932213305969362, guid: e88b57013bbc439429b4a9d6cd2b2d18, type: 3}
+  m_PrefabInstance: {fileID: 5363932213923520519}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &1309013759
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309013757}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.44390106, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.056098938
 --- !u!1 &1319114653
 GameObject:
   m_ObjectHideFlags: 0
@@ -40222,8 +40243,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "\u4F60\u548C\u4F60\u7684\u5BB6\u4EBA\u5728teleport \u7684\u65F6\u5019\uFF0C\n\u5931\u6563\u4E86
     \u3002 \n\u5F53\u4F60\u4ECE\u4F20\u9001\u7A7A\u95F4\u51FA\u6765\uFF0C\n\u4F7F\u7528\u65E0\u7EBF\u7535\u5F97\u77E5\u4F60\u7684\u5BB6\u4EBA\u5728\u9644\u8FD1\u7684\u201D\u5E9F\u5F03\u6751\u5E84\u201C
-    \u5446\u7740\uFF0C \n\u5E76\u4E14\u53C8\u4E2D\u7684\u201D\u75C5\u6BD2\u201C\u3002\n
-    \u6240\u4EE5\u73A9\u5BB6\u4F60\u9700\u8981\u91CD\u65B0\u6536\u96C6sample\uFF0C\n\u6765\u6362\u53D6vaccine\u6765\u62EF\u6551\u4F60\u7684\u5BB6\u4EBA\u3002"
+    \u5446\u7740\uFF0C \n\u5E76\u4E14\u53C8\u4E2D\u7684\u201D\u75C5\u6BD2\u201C\u3002\n\u6240\u4EE5\u73A9\u5BB6\u4F60\u9700\u8981\u91CD\u65B0\u6536\u96C6sample\uFF0C\n\u6765\u6362\u53D6vaccine\u6765\u62EF\u6551\u4F60\u7684\u5BB6\u4EBA\u3002"
 --- !u!222 &2000347229
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -41485,6 +41505,14 @@ PrefabInstance:
     - target: {fileID: 5363932212440132428, guid: e88b57013bbc439429b4a9d6cd2b2d18, type: 3}
       propertyPath: m_Name
       value: Player 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363932212440132428, guid: e88b57013bbc439429b4a9d6cd2b2d18, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363932212440132438, guid: e88b57013bbc439429b4a9d6cd2b2d18, type: 3}
+      propertyPath: attackDamage
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5363932213389731920, guid: e88b57013bbc439429b4a9d6cd2b2d18, type: 3}
       propertyPath: ui_window
