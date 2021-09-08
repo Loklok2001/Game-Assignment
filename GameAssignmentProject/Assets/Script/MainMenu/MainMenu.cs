@@ -31,6 +31,7 @@ public class MainMenu : MonoBehaviour
     public void unlock()
     {
         Scene_index = PlayerPrefs.GetInt("Saved");
+        //islock = PlayerPrefs.GetInt("islock");
 
         if (Scene_index == 2 || islock == 1)
         {
@@ -49,15 +50,21 @@ public class MainMenu : MonoBehaviour
         PauseMenu.GameIsPause = false;
         Time.timeScale = 1f;
         Scene_index = SceneManager.GetActiveScene().buildIndex;
-        //Scene_index = PlayerPrefs.GetInt("Saved");
-        //if (Scene_index == 2)
-        //{
-        //    PlayerPrefs.SetInt("islock", 1);
-        //    PlayerPrefs.Save();
-        //}
+
+        if (Scene_index == 2)
+        {
+            PlayerPrefs.SetInt("islock", 1);
+            PlayerPrefs.Save();
+        }
 
         PlayerPrefs.SetInt("Saved", Scene_index);
         PlayerPrefs.Save();
+
+        if (Scene_index == 2)
+        {
+            PlayerPrefs.SetInt("islock", 1);
+            PlayerPrefs.Save();
+        }
         SceneManager.LoadSceneAsync(0);
     }
 
