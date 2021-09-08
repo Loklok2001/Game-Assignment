@@ -17987,7 +17987,7 @@ PrefabInstance:
     - target: {fileID: 4771791885391441566, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
       propertyPath: bossAttack
       value: 
-      objectReference: {fileID: 8300000, guid: f12b4355de8f2844abed9815b5406e31, type: 3}
+      objectReference: {fileID: 8300000, guid: f0fece740b2f4b041a29f2116ebfcc47, type: 3}
     - target: {fileID: 4771791885605189438, guid: 023880903d3155a4a82b7a9310ce2289, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.540001
