@@ -31,7 +31,7 @@ public class PlayerCombat : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Attack") && Time.time >= nextAttackTime && !PauseMenu.GameIsPause)
+        if (Input.GetButtonDown("Attack") && Time.time >= nextAttackTime && !PauseMenu.GameIsPause && !Chest.isOpen)
         {
             Attack();
             attack = true;

@@ -11,7 +11,7 @@ public class Chest : MonoBehaviour
     [SerializeField]
     private Sprite openSprite, closedSprite;
 
-    private bool isOpen = false;
+    public static bool isOpen = false;
 
     [System.Serializable]
     private class ChestItem
