@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ClickBtn2 : MonoBehaviour
 {
+    public GameObject teleportPointShow;
+    public GameObject vaccine;
     public Text clickDisplay;
     public int clicks;
 
@@ -22,7 +24,10 @@ public class ClickBtn2 : MonoBehaviour
             AchievementManager.achievementManagerInstance.AddAchievementProgress("Influ4", 1);
             AchievementManager.achievementManagerInstance.AddAchievementProgress("Influ5", 1);
 
-
+            if (clicks % 5 == 0)
+            {
+                FindObjectOfType<InventorySystem>().PickUp(vaccine);
+            }
         }
 
       

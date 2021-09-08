@@ -18,7 +18,6 @@ public class SceneLoader : MonoBehaviour
             Text.SetActive(false);
             LoadNextScene();
         }
-        
     }
 
     public void LoadNextScene()
