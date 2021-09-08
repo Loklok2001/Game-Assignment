@@ -27,7 +27,7 @@ public class Music : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             audioSrc.Stop();
-            audioSrc.PlayOneShot(SafeZone);
+            audioSrc.PlayDelayed(0.2f);
         }
     }
 }
