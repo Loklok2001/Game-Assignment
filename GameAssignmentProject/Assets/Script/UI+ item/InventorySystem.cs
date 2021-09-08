@@ -11,6 +11,7 @@ public class InventorySystem : MonoBehaviour
     private void Start()
     {
         Update();
+        Update_Inventory();
     }
 
     [System.Serializable]
