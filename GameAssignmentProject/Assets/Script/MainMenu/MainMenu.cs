@@ -12,6 +12,15 @@ public class MainMenu : MonoBehaviour
     public GameObject lockButton;
     public GameObject unlockButton;
 
+    private void Start()
+    {
+        //if (Scene_index == 2)
+        //{
+        //    PlayerPrefs.SetInt("islock", 1);
+        //    PlayerPrefs.Save();
+        //}
+    }
+
     public void QuitButton()
     {
         Application.Quit();
@@ -60,11 +69,6 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetInt("Saved", Scene_index);
         PlayerPrefs.Save();
 
-        if (Scene_index == 2)
-        {
-            PlayerPrefs.SetInt("islock", 1);
-            PlayerPrefs.Save();
-        }
         SceneManager.LoadSceneAsync(0);
     }
 
