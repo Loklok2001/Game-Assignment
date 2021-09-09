@@ -17,9 +17,6 @@ public class PlayerCombat : MonoBehaviour
     static AudioSource audioSrc;
 
     public int attackDamage = 5;
-    public float attackRange = 0.5f;
-    public float attackrate = 2f;
-    float nextAttackTime = 0f;
     float timeUntilFire;
     public float fireRate = 0.2f;
 
@@ -31,11 +28,10 @@ public class PlayerCombat : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Attack") && Time.time >= nextAttackTime && !PauseMenu.GameIsPause && !Chest.isOpen)
+        if (Input.GetButtonDown("Attack") && !PauseMenu.GameIsPause && !Chest.isOpen)
         {
             Attack();
             attack = true;
-            nextAttackTime = Time.time + 1f / attackrate;
         }
         if (Input.GetButtonDown("Fire") && Time.time > timeUntilFire && !PauseMenu.GameIsPause)
         {

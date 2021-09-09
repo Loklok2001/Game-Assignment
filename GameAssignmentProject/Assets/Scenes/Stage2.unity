@@ -44418,8 +44418,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5363932212440132438, guid: e88b57013bbc439429b4a9d6cd2b2d18, type: 3}
+      propertyPath: fireRate
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363932212440132438, guid: e88b57013bbc439429b4a9d6cd2b2d18, type: 3}
+      propertyPath: attackRange
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363932212440132438, guid: e88b57013bbc439429b4a9d6cd2b2d18, type: 3}
       propertyPath: attackDamage
-      value: 50
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5363932212440132439, guid: e88b57013bbc439429b4a9d6cd2b2d18, type: 3}
       propertyPath: detectionLayer2.m_Bits
